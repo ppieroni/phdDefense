@@ -1,0 +1,7 @@
+*.*
+./fig/*
+!fig/*.*
+!*.tex
+!*.sh
+!.gitignore
+!README.md
