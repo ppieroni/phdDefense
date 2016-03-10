@@ -1,0 +1,145 @@
+\section[Resultados]{B\'usqueda de candidatos y resultados}
+
+\begin{frame}
+ \frametitle{Estrategia de cada b\'usqueda}
+ \begin{center}
+  \pgfimage[width=0.9\textwidth]{./fig/estrategiaAuger/analysisSchema_5}
+ \end{center}
+\end{frame}
+
+\begin{frame}{Unblinding DGL}
+	\begin{center}
+	\pgfimage[width=0.75\textwidth]{fig/resultadosAuger/DGL_Unblinding_Thesis}
+	\end{center}
+	\begin{block}{}
+	\centering {\Large \color{red}\bf 0 candidatos}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Unblinding DGH}
+	\begin{columns}[T]
+	\column{.5\textwidth}
+	\begin{tabular}{c}
+	\pgfimage[width=\textwidth]{fig/resultadosAuger/DGH_Retrining_May2012_2_low_Nor_mod}\\
+	\pgfimage[width=\textwidth]{fig/resultadosAuger/DGH_Retrining_May2012_2_med_Nor_mod}
+	\end{tabular}
+
+	\column{.5\textwidth}
+	\pgfimage[width=\textwidth]{fig/resultadosAuger/DGH_Retrining_May2012_2_high_Nor_mod} 
+	\vspace*{1cm}
+	\begin{block}{}
+	\centering \Large \bf \alert{0 candidatos}
+	\end{block}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Unblinding ES}
+	\begin{center}
+	\pgfimage[width=0.75\textwidth]{fig/resultadosAuger/Unblinding_ES_200613_mod}
+	\end{center}
+	\begin{block}{}
+	\centering {\Large \color{red}\bf 0 candidatos}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Estrategia de cada b\'usqueda}
+ \begin{center}
+  \pgfimage[width=0.9\textwidth]{./fig/estrategiaAuger/analysisSchema_6}
+ \end{center}
+\end{frame}
+
+\begin{frame}{L\'imite al flujo de neutrinos hasta el 20 Jun 13}
+	\scriptsize
+		\begin{textblock}{15}(0.5,2.3)
+			\begin{alertblock}{C\'alculo del l\'imite}
+				\centering
+				Asumiendo $\nu$ flux: $\Phi_\nu ~ = ~ k ~ E_\nu^{-2}$ $\Rightarrow$ $k_{\rm up} = \frac{N_{\rm up}}{\int_{E_{\rm min}}^{E_{\rm max}}~E_{\nu}^{-2}~{\cal E}_{\rm tot}(E_\nu)~dE_\nu}$
+				\\
+				M\'etodo de Conrad $\Rightarrow$ $N_{\rm up} = 2.39$
+			\end{alertblock}
+		\end{textblock}	
+		
+		\begin{textblock}{9}(0.5,5.5)
+			\begin{block}{Limits}<2->
+			\begin{overprint}
+				\onslide<2->\centerline{\pgfimage[width=\textwidth]{fig/resultadosAuger/diff_limits_and_models_paper_combined_all_Mod}}
+			\end{overprint}
+			\end{block}
+		\end{textblock}
+		
+		\begin{textblock}{5.6}(10,8)
+			\begin{exampleblock}{Remarks}<3->
+				\begin{itemize}
+				\item Most stringent upper bound to the flux
+				\item Lower than Waxman-Bachall upper bound
+				\item Best sensitivity where models predict bigger fluxes
+				\end{itemize}
+			\end{exampleblock}
+		\end{textblock}
+% 		
+		\begin{textblock}{5.6}(10,6)
+			\begin{alertblock}{}<2->
+			\centering
+			\tiny
+			$\bm{ k_{\rm up}=6.4 \times 10^{-9}~{\rm GeV~cm^{-2}~s^{-1}~sr^{-1}}}$
+			\\ a $90\%$ C.L. $1.0\times10^{17}~{\rm eV}<E<2.5\times10^{19.5}~{\rm eV}$
+			\end{alertblock}
+		\end{textblock}
+% % 		\begin{block}{Integrated limit}
+% % 		\centering
+% % 		$k_{\rm up}=6.54 \times 10^{-9}~{\rm GeV~cm^{-2}~s^{-1}~sr^{-1}}$ at $90\%$ C.L. in $10^{17}~{\rm eV}<E<10^{19.5}~{\rm eV}$
+% % 		\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Resultados}
+		\scriptsize
+		\begin{block}{Rate de eventos esperado}
+			\begin{center}
+				\renewcommand{\arraystretch}{2.0}
+				\begin{tabular}{l c c} 
+	\hline
+	Modelo para       &  Número esperado de eventos     & ~Probabilidad de   \\
+	el flujo difuso   &  (1 enero 2004 - 20 junio 2013) & ~observar $0$   \\
+	\hline
+	Cosmogénico - proton, FRII \cite{Kampert_GZK}     &  $\sim$ 4.0  & $\sim 1.8\times 10^{-2}$ \\
+
+	Cosmogénico - proton, SFR \cite{Kampert_GZK}      &  $\sim$ 0.9  & $\sim 0.4$               \\
+
+	Cosmogénico - proton, Fermi-LAT \cite{Ahlers_GZK} &  $\sim$ 3.2  & $\sim 4\times 10^{-2}$   \\
+
+	Cosmogénico - band \cite{Kotera_GZK}              &  $\sim$ 0.5 $-$ 1.4 & $\sim 0.6~-~0.2$ \\
+
+	Cosmogénico - iron, FRII \cite{Kampert_GZK}       &  $\sim$ 0.3  & $\sim 0.7$ \\
+
+	\hline
+
+	Astrofísico $\nu$ (AGN) \cite{Becker_AGN}     &  $\sim$ 7.2  & $\sim 7\times 10^{-4}$ \\
+
+% 	\hline
+% 
+% 	Exótico \cite{Sigl}                               &  $\sim$ 31.5  & $\sim 2\times 10^{-14}$ \\
+
+	\hline
+	\end{tabular}
+			\end{center}
+		\end{block}
+		\begin{alertblock}{}
+			\begin{itemize}
+			 \item Optimistic proton fluxes discarted $>90\%\rm C.L.$ (\textcolor{Red}{Red numbers})
+			 \item Getting close to less optimistic proton fluxes (\textcolor{Blue}{Blue numbers})
+			 \item Still far from iron fluxes
+			\end{itemize}
+		\end{alertblock}
+	\end{frame}
+% 	
+	\begin{frame}{Comentarios finales de la primera parte}
+		\begin{center}
+		\pgfimage[width=0.75\textwidth]{fig/resultadosAuger/diff_limits_and_many_models_IceCube_data_noextrap}
+		\end{center}
+		\begin{block}{}
+		 \centering
+		 \textbf{Desafio para la pr\'oxima generaci\'on de detectores de neutrinos}
+		\end{block}
+	\end{frame}
