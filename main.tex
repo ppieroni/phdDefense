@@ -21,7 +21,10 @@
 \usepackage[absolute, overlay]{textpos}
 \usepackage{diagbox}
 \usepackage{hhline}
+\usepackage{booktabs}
 \input{htmlColors.tex}
+
+\newcommand{\cant}[2]{$#1 \rm \ #2$}
 
 % \defbeamertemplate{footline}{my foot}
 % {%
@@ -69,6 +72,7 @@
 
 \AtBeginPart{\frame{\partpage}}
 \newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{L}{>{\centering\arraybackslash}m{2.25cm}}
 % \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \begin{document}
 
@@ -85,152 +89,16 @@
 % \include{simulacionAuger}
 % \include{seleccionAuger}
 % \include{exposicionAuger}
-\include{resultadosAuger}
+% \include{resultadosAuger}
 % 
-% \part{Detecci\'on de neutrinos ultra energ\'eticos con un arreglo de antenas de radio}
-% \include{estrategiaRadio}
-% \include{EASRadio}
-% \include{simulacionRadio}
-% \include{caracterizacionRadio}
-% \include{resultadosRadio}
+\part{Detecci\'on de neutrinos ultra energ\'eticos con un arreglo de antenas de radio}
+\include{estrategiaRadio}
+\include{EASRadio}
+\include{modeloRadio}
+\include{simulacionRadio}
+\include{caracterizacionRadio}
+\include{resultadosRadio}
 % \include{conclusiones}
 % \include{backupSlides}
-
-
-
-% \begin{frame}{End to end simulation}
-% 		\scriptsize
-% 		\begin{block}{Simulation stages}
-% 			\begin{center}
-% 			\pgfimage[height=0.35\textwidth]{fig/sim_cartoon_upgoing}
-% 			\end{center}
-% 		\end{block}
-% 		\begin{alertblock}{}
-% 			\begin{enumerate}
-% 			 \item ${\rm P(\tau,\nu_\tau)}$: Probability to obtain a $\tau$ with $(E_\tau,\theta)$ given a $\nu_\tau$ with $(E_\nu,\theta)$ using our code
-% 			 \item $\tau$ decay products energy sampling obtained with {\sc TAUOLA}
-% 			 \item Shower evolution and antenna signal calculation with ZHAireS
-% 			 \item Antenna response and efficiency calculation using our code
-% 			\end{enumerate}
-% 		\end{alertblock}
-% \end{frame}
-% 
-% \begin{frame}{Radio footprint}
-% 		\scriptsize
-% 		\begin{block}{Cherenkov emision projected over the ground}
-% 			\begin{center}
-% 			\pgfimage[width=0.8\textwidth]{fig/coneProy}
-% 			\end{center}
-% 		\end{block}
-% 		\begin{alertblock}{Projection width:}
-% 		\begin{center}
-% 		\begin{displaymath}
-% 			w^2=
-% 			(\tan^2 \theta_{cher}-\tan^2 (\theta-\frac{\pi}{2}))
-% 			(\frac{d}{\sin \theta}-l_{max})^2
-% 			- \tan (\theta-\frac{\pi}{2}) \frac{h_{max}}{\sin \theta} (\frac{d}{\sin \theta}-l_{max})
-% 			- \frac{h_{max}^2}{\sin^2 \theta}
-% 			\end{displaymath}
-% 		\end{center}
-% 		\end{alertblock}
-% \end{frame}
-% 
-% \begin{frame}{Radio footprint}
-% 		\scriptsize
-% 		\begin{block}{Energy of the tau that goes into shower $\sim1{\rm EeV}$}
-% 			\begin{center}
-% 			\pgfimage[height=0.35\textwidth]{fig/foorPrint_Cone}
-% 			\end{center}
-% 		\end{block}
-% 		\begin{alertblock}{}
-% 			\begin{enumerate}
-% 			 \item Very elongated and narrow footprints
-% 			 \item In agreement with Cherenkov emission prediction
-% 			\end{enumerate}
-% 		\end{alertblock}
-% \end{frame}
-% 
-% 
-% \begin{frame}{Efficiency calculation}
-% 		\scriptsize
-% 		\begin{textblock}{15}(0.5,1.5)
-% 			\begin{block}{\scriptsize Visible energy: $1{\rm EeV}$}
-% 				\begin{center}
-% 				\pgfimage[height=0.3\textwidth]{fig/cores}
-% 				\hfill
-% 				\pgfimage[height=0.3\textwidth]{fig/trigger}
-% 				\end{center}
-% 			\end{block}
-% 		\end{textblock}
-% 		\begin{textblock}{15}(0.5,9.1)
-% 			\begin{alertblock}{}
-% 				\begin{itemize}\scriptsize
-% 				 \item Example: Squared array. 1000 m separation between antennas. 
-% 				 \item Big enough to contain the shower whole.
-% 				 \item 1000 core position in each $(E_{visible},\theta,\tau_{\rm decayHeight})$ bin.
-% 				 \item Antenna response $30-80{\rm Mhz}$/$150-900{\rm Mhz}$.
-% 				 \item Trigger if $n$ antennas above threshold (selected by user)
-% 				 \item Identification efficiency conservatively assumed as 0.9:
-% 					 \begin{itemize}\tiny
-% 					 \item Based on the apparent velocity of the signal and the with of the footprint.
-% 					 \item Not optimized yet
-% 					 \end{itemize}
-% 				\end{itemize}
-% 			\end{alertblock}
-% 		\end{textblock}
-% \end{frame}
-% 
-% \begin{frame}{Exposure calculation}
-% 
-% 		\begin{block}{Formula}
-% 			\begin{center}
-% 			\begin{displaymath}
-% 		\begin{aligned}
-% 			{\cal E} (E_\nu) = 2 \pi 
-% 			\textcolor{Red}{T A}
-% 			\int_{0}^{\infty} 
-% 			\int_{\theta^{cut}}^{\theta^{max}} 
-% 			\int_{0}^{E_\nu} 
-% 			\int_{0}^{E_\tau} 
-% 			\textcolor{Blue}{\epsilon (x_d,\theta,E_{sh})}
-% 			\textcolor{DarkOrange}{
-% 			\frac{e^{-\frac{l(x_d)}{\lambda(E_\tau)}}}{\lambda(E_\tau)}\frac{dl(x_d)}{dx_d}
-% 			}
-% 			\textcolor{DarkViolet}{P(E_{sh}|E_\tau)}\\
-% 			\textcolor{Green}{P(E_\tau|E_\nu,\theta)}
-% 			\textcolor{Magenta}{\sin \theta \cos \theta}
-% 			dE_{sh} dE_\tau  d\theta dx_d
-% 		\end{aligned}
-% 		\end{displaymath}
-% 			\end{center}
-% 		\end{block}
-% 		\begin{exampleblock}{Ingredients}
-% 			\begin{itemize}
-% 			 \item \textcolor{Red}{Time and area}
-% 			 \item \textcolor{Blue}{Trigger and Id efficiency}
-% 			 \item \textcolor{DarkOrange}{Probability of $\tau$ decay at vertical depth $x_d$ in atmosphere.}
-% 			 \item \textcolor{DarkViolet}{Probability of $\tau$ of energy $E_\tau$ producing shower of energy $E_{sh}$}
-% 			 \item \textcolor{Green}{Interaction inside Earth}
-% 			 \item \textcolor{Magenta}{Solid angle}
-% 			\end{itemize}
-% 		\end{exampleblock}
-% 
-% \end{frame}
-% 
-% \begin{frame}{3yr radio array sensitivity}
-% 
-% 				\begin{alertblock}{\scriptsize Upper limit calculation}
-% 				\centering
-% 				\scriptsize
-% 				Assume $\nu$ flux: $\Phi_\nu ~ = ~ k ~ E_\nu^{-2}$ $\Rightarrow$ ${\text Sensitivity} = \frac{2.4}{\int E_{\nu}^{-2}~{\cal E}(E_\nu) dE_\nu}$
-% 			\end{alertblock}
-% 		
-% 		
-% 		\begin{block}{\scriptsize Diferential limit: 90000 antennas  in a 900x900m array - Trigger threshold 50${\rm \mu Vm}$/350${\rm \mu Vm}$}
-% 			\begin{center}
-% 			\pgfimage[height=0.45\textwidth]{fig/limits_future}
-% 			\end{center}
-% 		\end{block}
-% \end{frame}
 
 \end{document}
