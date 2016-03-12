@@ -1,0 +1,78 @@
+\section[Emisi\'on]{Emisi\'on de radio en EAS}
+
+\begin{frame}{Emisi\'on de radio en lluvias atmosf\'ericas}
+\framesubtitle{Origen}
+\footnotesize
+	\begin{block}{Part\'icula que se desplaza en l\'inea recta a velocidad constante}
+		\begin{center}
+		\pgfimage[width=0.5\textwidth]{fig/EASRadio/trackSch}
+		\end{center}
+	\end{block}
+	
+	\begin{block}{Aproximaci\'on ZHS}
+		\begin{center}
+		\pgfimage[width=0.5\textwidth]{fig/EASRadio/zhs_pulse}
+		\end{center}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Emisi\'on de radio en lluvias atmosf\'ericas}
+\framesubtitle{Polarizaci\'on}
+\footnotesize
+	
+	\begin{exampleblock}{Dos mecanismos efectivos}
+		\begin{itemize}[<alert@+|+->]
+		 \item Efecto geomagn\'etico
+		 \item Efecto Askaryan
+		\end{itemize}
+	\end{exampleblock}
+	\vfill
+	\begin{overprint}
+	\onslide<1>
+		\centerline{\pgfimage[width=0.8\textwidth]{fig/EASRadio/geom_sketch}}
+	\onslide<2>
+		\centerline{\pgfimage[width=0.8\textwidth]{fig/EASRadio/ask_sketch}}
+	\end{overprint}
+\end{frame}
+
+% \begin{frame}{Emisi\'on de radio en lluvias atmosf\'ericas}
+% \footnotesize
+% 	\begin{block}{}
+% 		\begin{center}
+% 		
+% 		\end{center}
+% 	\end{block}
+% \end{frame}
+
+\begin{frame}{Emisi\'on de radio en lluvias atmosf\'ericas}
+\framesubtitle{Huella y estructura temporal}
+\footnotesize
+	\begin{block}{Efecto Cherenkov}
+		\begin{overprint}
+		\onslide<1>\centerline{\pgfimage[width=0.9\textwidth]{fig/EASRadio/cherEmmision}}
+		\onslide<2>\centerline{\pgfimage[width=0.9\textwidth]{fig/EASRadio/cono}}
+		\onslide<3>\centerline{\pgfimage[width=0.9\textwidth]{fig/EASRadio/chConeSch}}
+		\end{overprint}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Geometr\'ia del cono Cherenkov}
+\framesubtitle{Eventos ES}
+\footnotesize
+	\begin{block}{Esquema}
+		\begin{center}
+		\pgfimage[width=0.9\textwidth]{fig/modeloRadio/coneProy}
+		\end{center}
+	\end{block}
+	\begin{alertblock}{Huella del cono sobre el suelo}
+		\begin{center}
+		 \begin{displaymath}
+			w^2(d)=
+			(\tan^2 \theta_{cher}-\tan^2 (\theta-\frac{\pi}{2}))
+			(\frac{d}{\sin \theta}-l_{max})^2
+			- \tan (\theta-\frac{\pi}{2}) \frac{h_{max}}{\sin \theta} (\frac{d}{\sin \theta}-l_{max})
+			- \frac{h_{max}^2}{\sin^2 \theta}
+		 \end{displaymath}
+		\end{center}
+	\end{alertblock}
+\end{frame}

@@ -1,0 +1,82 @@
+\section[Simulaci\'on]{Simulaci\'on Radio}
+
+
+
+\begin{frame}{Cadena de simulaci\'on}
+\footnotesize
+	\begin{block}{Etapas}
+		\begin{center}
+		\pgfimage[width=0.9\textwidth]{fig/simulacionRadio/sim_cartoon_upgoing}
+		\end{center}
+	\end{block}
+% 	\begin{alertblock}{Caracter\'isticas deseables}
+% 	\end{alertblock}
+\end{frame}
+
+\begin{frame}{Ubicaci\'on del detector}
+\footnotesize
+	\begin{block}{Posibles ubicaciones}
+		\begin{center}\scriptsize
+		\begin{tabular}{LLLL}
+		\toprule
+		Experimento (Sitio) & Declinaci\'on (+E,-W) & Inclinaci\'on (+D,-U)& Intensidad [Gauss] \\
+		\midrule
+		Auger AERA (Malarg\"ue Argentina) 
+% 		& $35^\circ12$'${\rm S} $ $69^\circ18$'${\rm W}$
+		& $(1.68\pm0.37)^\circ$ & $-36.3\pm0.22)^\circ$ & $0.2392\pm0.0015$ \\ \midrule
+		\alert<2>{Tunka Rex  (Tunka Valley Rusia)}
+% 		& $51^\circ48$'${\rm N}$ $103^\circ04$'${\rm E}$
+		& \alert<2>{$(-2.82\pm0.37)^\circ$} & \alert<2>{$(-71.2\pm0.22)^\circ$} & \alert<2>{$0.6037\pm0.0015$} \\ \midrule
+		Trend  (Tian shan China) 
+% 		& $40^\circ32$'${\rm N}$ $78^\circ25$'${\rm E}$
+		& $(3.76\pm0.37)^\circ$ & $(60.0\pm0.22)^\circ$ & $0.5391\pm0.0015$ \\
+		\bottomrule
+		\end{tabular}
+		\end{center}
+	\end{block}
+	\begin{exampleblock}{Caracter\'isticas deseables}
+	\begin{itemize}
+	 \item Verticalidad
+	 \item Intensidad alta
+	\end{itemize}
+	\end{exampleblock}
+
+\end{frame}
+
+\begin{frame}{Representaci\'on del detector}
+\footnotesize
+	\begin{block}{Esquema del detector}
+		\begin{center}
+		\pgfimage[width=0.6\textwidth]{fig/simulacionRadio/antennaSch.pdf}
+		\end{center}
+	\end{block}
+	\begin{alertblock}{Antena sobre el cono Cherenkov}
+	\begin{center}
+		\pgfimage[width=0.48\textwidth]{fig/simulacionRadio/antennaSignal}\hspace*{2mm}
+		\pgfimage[width=0.48\textwidth]{fig/simulacionRadio/antennaFilt}
+	\end{center}
+	\end{alertblock}
+\end{frame}
+
+\begin{frame}{Disparo local}
+\footnotesize
+	\begin{exampleblock}{Fuentes}
+	\begin{itemize}
+	 \item Ionosf\'erico
+	 \item Proveniente de la ciudad
+	 \item Gal\'actico
+	 \item Intr\'inseco
+	\end{itemize}
+	\end{exampleblock}
+	\begin{block}{Intensidad}
+		\begin{center}
+		\pgfimage[width=0.5\textwidth]{fig/simulacionRadio/allanNoise.pdf}
+		\end{center}
+	\end{block}
+	\vspace*{-1cm}
+	\begin{alertblock}{}
+		\begin{center}
+		\textbf{Nivel de disparo local entre \cant{\bm 25}{\mu V/m} y \cant{250}{\mu V/m}}
+		\end{center}
+	\end{alertblock}
+\end{frame}

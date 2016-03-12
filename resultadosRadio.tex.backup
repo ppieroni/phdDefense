@@ -1,0 +1,145 @@
+\section[Exposicion]{C\'alculo de la exposici\'on}
+
+\begin{frame}{C\'alculo de exposici\'on}
+\footnotesize
+		\begin{block}{F\'ormula}
+			\begin{center}
+			\begin{displaymath}
+			\begin{aligned}
+				{\cal E} (E_\nu) = 2 \pi 
+				\textcolor{Red}{T A}
+				\int_{0}^{\infty} 
+				\int_{\theta^{cut}}^{\theta^{max}} 
+				\int_{0}^{E_\nu} 
+				\int_{0}^{E_\tau} 
+				\textcolor<2->{Blue}{\epsilon (x_d,\theta,E_{sh})}
+				\textcolor<3->{DarkOrange}{
+				\frac{e^{-\frac{l(x_d)}{\lambda(E_\tau)}}}{\lambda(E_\tau)}\frac{dl(x_d)}{dx_d}
+				}
+				\textcolor<4->{DarkViolet}{P(E_{sh}|E_\tau)}\\
+				\textcolor<5->{Green}{P(E_\tau|E_\nu,\theta)}
+				\textcolor<6->{Magenta}{\sin \theta \cos \theta}
+				dE_{sh} dE_\tau  d\theta dx_d
+			\end{aligned}
+		\end{displaymath}
+			\end{center}
+		\end{block}
+		\begin{exampleblock}{Ingredientes}
+			\begin{itemize}[<+->]
+			 \item \textcolor{Red}{Tiempo de medici\'on y \'area.}
+			 \item \textcolor{Blue}{Eficiencia de detecci\'on.}
+			 \item \textcolor{DarkOrange}{Probabilidad de decaimiento de un $\tau$ a altura ${\rm x_d}$.}
+			 \item \textcolor{DarkViolet}{Probabilidad que un $\tau$ de energ\'ia $E_\tau$ produzca una lluvia de energ\'ia $E_{sh}$.}
+			 \item \textcolor{Green}{Interacci\'on en la tierra.}
+			 \item \textcolor{Magenta}{\'Angulo s\'olido.}
+			\end{itemize}
+		\end{exampleblock}
+\end{frame}
+
+\begin{frame}{Topograf\'ia del detector}
+\footnotesize
+	\begin{block}{Descripci\'on}
+		\begin{center}
+		\pgfimage[width=0.85\textwidth]{fig/resultadosRadio/topografia}
+		\end{center}
+	\end{block}
+% 	\begin{block}{}
+% 		\begin{center}
+% 		
+% 		\end{center}
+% 	\end{block}
+\end{frame}
+
+\begin{frame}{C\'alculo de la eficiencia}
+\footnotesize
+	\begin{block}{Se lanz\'o cada lluvia 1000 veces sobre la celda primitiva}
+	\centering
+		\pgfimage[width=0.48\textwidth]{fig/resultadosRadio/17.00_89.90_00.00_00025_01238_1000_1000_90_re}\hspace*{2mm}
+		\pgfimage[width=0.48\textwidth]{fig/resultadosRadio/17.00_89.90_00.00_00025_01238_1500_1500_60_re} \\ \vspace*{2mm}
+		\pgfimage[width=0.48\textwidth]{fig/resultadosRadio/17.00_89.90_00.00_00025_01238_500_4000_90_de}\hspace*{2mm}
+		\pgfimage[width=0.48\textwidth]{fig/resultadosRadio/17.00_89.90_00.00_00025_01238_750_750_60_hc}
+	\end{block}
+% 	\begin{block}{}
+% 		\begin{center}
+% 		
+% 		\end{center}
+% 	\end{block}
+\end{frame}
+
+\section[Resultados]{Resultado final}
+
+\begin{frame}{L\'imite diferencial en 3 a\~nos de exposici\'on}
+
+				\begin{alertblock}{\scriptsize C\'alculo del l\'imite}
+				\centering
+				\scriptsize
+				Se asume un flujo: $\Phi_\nu ~ = ~ k ~ E_\nu^{-2}$ $\Rightarrow$ ${\text k (E_\nu)} = \frac{2.4}{\int\limits_{E_\nu-\Delta}^{E_\nu+\Delta} \tilde{E}_{\nu}^{-2}~{\cal E}(\tilde{E}_\nu) d\tilde{E}_\nu}$
+			\end{alertblock}
+		
+		
+		\begin{block}{\scriptsize L\'imite diferencial: 90000 antennas - Trigger local 50${\rm \mu Vm}$ - L = 250 ${\rm km}$ - 500${\rm km}$}
+			\begin{center}
+			\pgfimage[height=0.45\textwidth]{fig/resultadosRadio/limits_future_v1_2_2.pdf}
+			\end{center}
+		\end{block}
+\end{frame}
+
+\begin{frame}{Desempe\~no - L = 250 ${\rm km}$}
+	\begin{block}{Rate de eventos}
+		\begin{center}
+		\renewcommand{\arraystretch}{1.3}
+		\footnotesize
+		\begin{tabular}{lccc}
+			\hline
+			\multirow{2}{*}{Modelo} & \multicolumn{3}{c}{Topograf\'ia - \cant{L=250}{km}} \\
+			&   Regular &   Panal de abeja &   Bordes densos \\
+			\hline
+			Cosmogénico - proton, FRII &    45.3 &             52.2 &            52.5 \\
+			Cosmogénico - proton, Fermi-LAT &     34.1 &             39.4 &            39.5 \\
+			Cosmogénico - proton, SFR &     10.3 &             11.8 &            11.9 \\
+			Cosmogénico - H\'ibrido &      5.8 - 14.9 &      6.7 - 17.2 &       6.7 - 17.3 \\
+			Cosmogénico - iron, FRII &     3.2 &              3.6 &             3.7 \\
+			IceCube extrapolado $E^{-2}$ &      13.1 &             15.1 &            15.2 \\
+			IceCube extrapolado \emph{Best fit}  &      12.9 &             14.9 &            15   \\
+			\hline
+		\end{tabular}
+		\end{center}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Desempe\~no - L = 500 ${\rm km}$}
+	\begin{block}{Rate de eventos}
+		\begin{center}
+		\renewcommand{\arraystretch}{1.3}
+		\footnotesize
+		\begin{tabular}{lccc}
+			\hline
+			\multirow{2}{*}{Modelo} & \multicolumn{3}{c}{Topograf\'ia - \cant{L=500}{km}} \\
+			&   Regular &   Panal de abeja &   Bordes densos \\
+			\hline
+			Cosmogénico - proton, FRII &    185.8 &            193   &           191.3 \\
+			Cosmogénico - proton, Fermi-LAT &     140.3 &             146.0 &           144.8 \\
+			Cosmogénico - proton, SFR &     42.1 &             43.8   &            43.4 \\
+			Cosmogénico - H\'ibrido &  23.9 - 61.3 &   24.8 - 63.7 &  24.6 - 63.2 \\
+			Cosmogénico - iron, FRII &     13.0   &        13.4 &            13.3 \\
+			IceCube extrapolado $E^{-2}$ &      53.6 &         55.5   &            55   \\
+			IceCube extrapolado \emph{Best fit} &    52.4 &  53.8  &   53.3 \\
+			\hline
+		\end{tabular}
+		\end{center}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Detector ideal}
+\footnotesize
+		\begin{alertblock}{Caracter\'isticas:}
+		 \centering
+		 \textbf{100$\bm\%$ eficiente en el rango angular $\bm{90^\circ}$ - $\bm{92.5^\circ}$}
+		\end{alertblock}
+
+		\begin{block}{\scriptsize L\'imite diferencial: 90000 antennas - Trigger local 50${\rm \mu Vm}$ - L = 250 ${\rm km}$ - 500${\rm km}$}
+			\begin{center}
+			\pgfimage[width=0.9\textwidth]{fig/resultadosRadio/limits_future_v1_1_2.pdf}
+			\end{center}
+		\end{block}
+\end{frame}

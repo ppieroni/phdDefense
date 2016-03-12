@@ -1,0 +1,48 @@
+\section[Muestras]{Obtenci\'on de las muestras para entrenar los criterios}
+
+\begin{frame}
+ \frametitle{Estrategia de cada b\'usqueda}
+ \begin{center}
+  \pgfimage[width=0.9\textwidth]{./fig/estrategiaAuger/analysisSchema_2}
+ \end{center}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Simulaci\'on de neutrinos DG}
+ \begin{textblock}{14.5}(0.5,4.4)
+  \pgfimage[width=\textwidth]{fig/simulacionAuger/sim_cartoon_upgoing}
+ \end{textblock}
+ 
+%  \begin{textblock}{7.6}(8,2.5)
+%   \begin{block}{}\scriptsize
+%    \begin{center}
+%     \begin{tabular}{|c|l|l|}
+% 		% \hline
+% 		\hline
+% 		\# &Canal   & Probabilidad (\%) \\
+% 		\hline
+% 		1&$\tau^{-}\rightarrow \pi^{-}\pi^{0}\nu_{\tau}$   & $\sim$25.5 \\
+% 		2&$\tau^{-}\rightarrow e^{-}\bar{\nu_{e}}\nu_{\tau}$   & $\sim$17.9 \\
+% 		{\color{Red} 3}&{\color{Red} $\tau^{-}\rightarrow \mu^{-}\bar{\nu_{\mu}}\nu_{\tau}$  } & {\color{Red} $\sim$17.4}\\
+% 		4&$\tau^{-}\rightarrow \pi^{-}\nu_{\tau}$   & $\sim$10.9 \\
+% 		5&$\tau^{-}\rightarrow 2\pi^{-}\pi^{+}\nu_{\tau}$   & $\sim$9.3 \\
+% 		6&$\tau^{-}\rightarrow \pi^{-}2\pi^{0}\nu_{\tau}$   & $\sim$9.3 \\
+% 		7&$\tau^{-}\rightarrow 2\pi^{-}\pi^{+}\pi^{0}\nu_{\tau}$   & $\sim$4.6 \\
+% 		8&$\tau^{-}\rightarrow \pi^{-}3\pi^{0}\nu_{\tau}$   & $\sim$1.0 \\
+% 		\hline
+% 		\end{tabular}
+%    \end{center}
+%   \end{block}
+%  \end{textblock} 
+\end{frame}
+
+\begin{frame}
+ \frametitle{Simulaci\'on de neutrinos DG}
+ \begin{textblock}{14.5}(0.5,4.4)
+  \pgfimage[width=\textwidth]{fig/simulacionAuger/sim_cartoon}
+ \end{textblock}
+ 
+%  \begin{textblock}{7.6}(8,3)
+%   \pgfimage[width=\textwidth]{fig/simulacionAuger/nu_channels}
+%  \end{textblock} 
+\end{frame}

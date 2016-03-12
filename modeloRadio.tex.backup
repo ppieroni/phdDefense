@@ -1,0 +1,39 @@
+\section[Modelado]{Modelado Radio}
+
+\begin{frame}{Geometr\'ia del cono Cherenkov}
+\footnotesize
+	\begin{block}{Esquema}
+		\begin{center}
+		\pgfimage[width=0.9\textwidth]{fig/modeloRadio/coneProy}
+		\end{center}
+	\end{block}
+	\begin{alertblock}{Huella del cono sobre el suelo}
+		\begin{center}
+		 \begin{displaymath}
+			w^2(d)=
+			(\tan^2 \theta_{cher}-\tan^2 (\theta-\frac{\pi}{2}))
+			(\frac{d}{\sin \theta}-l_{max})^2
+			- \tan (\theta-\frac{\pi}{2}) \frac{h_{max}}{\sin \theta} (\frac{d}{\sin \theta}-l_{max})
+			- \frac{h_{max}^2}{\sin^2 \theta}
+		 \end{displaymath}
+		\end{center}
+	\end{alertblock}
+\end{frame}
+
+\begin{frame}{Modelo de juguete}
+\footnotesize
+	\begin{exampleblock}{Esquema}
+		\begin{center}
+		\pgfimage[width=0.85\textwidth]{fig/modeloRadio/timeDelaySchema}
+		\end{center}
+	\end{exampleblock}
+	\begin{block}{Resultado}<2>
+		\begin{center}
+		\visible<2>{
+		\pgfimage[height=0.25\textwidth]{fig/modeloRadio/timeDelay_pd} \hspace*{0mm}
+		\pgfimage[height=0.25\textwidth]{fig/modeloRadio/legend.pdf} \hspace*{0mm}
+		\pgfimage[height=0.25\textwidth]{fig/modeloRadio/timeDelay_spa} \hspace*{0mm}
+		}
+		\end{center}
+	\end{block}
+\end{frame}

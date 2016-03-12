@@ -1,0 +1,37 @@
+\section[Caracterizaci\'on]{Caracterizaci\'on}
+
+\begin{frame}{Caracterizaci\'on}
+\footnotesize
+	\begin{block}{Huella del m\'aximo campo el\'ectrico - $\theta=92.5^\circ$\cant{}{x_d=25m} \cant{E_v=10^{18}}{eV} $\phi=90^\circ$}
+		\begin{center}
+		\pgfimage[width=0.85\textwidth]{fig/caracterizacionRadio/foorPrint_Cone_ZWv1.22_ntuples_v1.21_ChTest_phi_90_18_89.5_90_25_1238_E0.png}
+		\end{center}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Caracterizaci\'on}
+\footnotesize
+	\begin{block}{Distribuci\'on de part\'iculas}
+		\begin{center}
+		\pgfimage[width=0.85\textwidth]{fig/caracterizacionRadio/foorPrint_Test_18_89-5_90_25_1238_E_particles.png}
+		\end{center}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Caracterizaci\'on}
+\footnotesize
+	\begin{block}{Polarizaci\'on}
+		\begin{center}
+		\pgfimage[width=0.85\textwidth]{fig/caracterizacionRadio/phiDist_Test_18_89.5_90_25_1238}
+		\end{center}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Caracterizaci\'on}
+\footnotesize
+	\begin{block}{Capacidad de disparo}
+		\begin{center}
+		\pgfimage[width=0.85\textwidth]{fig/caracterizacionRadio/phiDist_Test_18_89.5_90_25_1238}
+		\end{center}
+	\end{block}
+\end{frame}

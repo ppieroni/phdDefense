@@ -1,0 +1,29 @@
+\section{Estrategia}
+
+\begin{frame}
+ \frametitle{Motivaci\'on}
+ \footnotesize
+ \begin{exampleblock}{}
+  \centering
+  \textbf{Las lluvias atmosf\'ericas emiten se\~nales de radio.}
+ \end{exampleblock}
+
+ 
+ \begin{block}{?`Por qu\'e un arreglo de antenas de radio?}
+  \begin{itemize}\setlength\itemsep{2mm}
+   \item La amplitud del pulso posee informaci\'on calorim\'etrica $\rightarrow\ E_{prim}$
+   \item Los tiempos de arribo guardan informaci\'on sobre la distribuci\'on longitudinal de la lluvia $\rightarrow\ X_{max}$
+   \item Casi $100\%$ de tiempo de operaci\'on.
+   \item Bajo costo relativo.
+  \end{itemize}
+ \end{block}
+ 
+ \begin{exampleblock}{GRAND}
+  Propone desplegar 90000 antenas en Tianshian, China para desarrollar b\'usquedas de neutrinos c\'osmicos ultra energ\'eticos.
+ \end{exampleblock}
+ 
+ \begin{alertblock}{Esta parte de la tesis:}
+  Estimar el desempe\~no de un arreglo de 90000 antenas de radio al detectar UHE$\nu$s.
+ \end{alertblock}
+ 
+\end{frame}

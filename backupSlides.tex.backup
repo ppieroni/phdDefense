@@ -1,0 +1,244 @@
+\section{Backup Slides}
+
+\frame{\sectionpage}
+
+	
+\begin{frame}
+\frametitle{Observatorio Pierre Auger (PAO)}
+\framesubtitle{Descripci\'on}
+	\begin{block}{Detector - Tama\~no}
+		\begin{center}
+			\pgfimage[width=0.7\textwidth]{./fig/detectorAuger/augercapfed}
+		\end{center}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Divisi\'on de las muestras para DG}
+	\begin{block}{DGL}
+		\begin{center}
+		\pgfimage[width=0.9\textwidth]{./fig/simulacionAuger/periodosDGL}
+		\end{center}
+	\end{block}
+	\begin{block}{DGH}
+		\begin{center}
+		\pgfimage[width=0.9\textwidth]{./fig/simulacionAuger/periodosDGH}
+		\end{center}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Divisi\'on de las muestras para ES}
+	\begin{block}{ES}
+		\begin{center}	 
+		\pgfimage[width=0.9\textwidth]{./fig/simulacionAuger/periodosES}
+		\end{center}
+	\end{block}
+\end{frame}
+
+
+\begin{frame}
+ \frametitle{Estrategia de cada b\'usqueda}
+ \begin{center}
+  \pgfimage[width=0.9\textwidth]{./fig/estrategiaAuger/analysisSchema_1}
+ \end{center}
+\end{frame}
+
+\begin{frame}{Eficiencias DG}
+	\begin{block}{Disparo com funci\'on de la prifundidad}
+		\begin{center}
+		\pgfimage[width=0.75\textwidth]{fig/exposicionAuger/eff_10EeV_85}
+		\end{center}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Eficiencias DG}
+	\begin{block}{Disparo com funci\'on de la energ\'ia}
+		\begin{center}
+		\pgfimage[width=0.75\textwidth]{fig/exposicionAuger/eff_varios_85}
+		\end{center}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Eficiencias DG}
+\footnotesize
+	\begin{block}{Disparo com funci\'on del \'angulo cenital}
+		\begin{center}
+		\pgfimage[width=0.4\textwidth]{fig/exposicionAuger/eff_1EeV_80}\hspace{3mm}
+		\pgfimage[width=0.4\textwidth]{fig/exposicionAuger/eff_1EeV_85}
+		\end{center}
+	\end{block}
+% \end{frame}
+% 
+% \begin{frame}{Eficiencias DG}
+	\begin{block}{Disparo com funci\'on del canal de interaccion}
+		\begin{center}
+		\pgfimage[width=0.4\textwidth]{fig/exposicionAuger/eff_CCvsNC_85}\hspace{3mm}
+		\pgfimage[width=0.4\textwidth]{fig/exposicionAuger/eff_tau_1EeV_85}
+		\end{center}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Eficiencias ES}
+	\begin{block}{Disparo com funci\'on de la altura de decaimiento}
+		\begin{center}
+		\pgfimage[width=0.75\textwidth]{fig/exposicionAuger/eff_18_8931_forThesis}
+		\end{center}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Eficiencias ES}
+	\begin{block}{Disparo com funci\'on de la energ\'ia}
+		\begin{center}
+		\pgfimage[width=0.75\textwidth]{fig/exposicionAuger/eff_multEnergy_forThesis}
+		\end{center}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Eficiencias ES}
+\footnotesize
+	\begin{block}{Disparo com funci\'on del \'angulo cenital}
+		\begin{center}
+		\pgfimage[width=0.48\textwidth]{fig/exposicionAuger/eff_multiTheta_forThesis}
+		\hspace{1mm}
+		\pgfimage[width=0.48\textwidth]{fig/exposicionAuger/eff_multTheta_h10_forThesis}
+		\end{center}
+	\end{block}
+	\begin{block}{Definicion de la variable $h_{10}$}
+		\begin{center}
+		\pgfimage[width=0.45\textwidth]{fig/exposicionAuger/hc_def.pdf}
+		\end{center}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Integraci\'on temporal y en superficie}
+	\begin{block}{M\'etodo de calculo}
+		\begin{center}
+		\pgfimage[width=0.6\textwidth]{fig/exposicionAuger/aperturaReal}
+		\end{center}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Integraci\'on temporal y en superficie}
+	\begin{block}{Selecci\'on de la configuraci\'on del detector}
+		\begin{center}
+		\pgfimage[width=0.75\textwidth]{fig/exposicionAuger/t2FilePlot}
+		\end{center}
+	\end{block}
+\end{frame}
+
+
+\begin{frame}{Integraci\'on temporal y en superficie}
+	\begin{block}{Envejecimiento de detector}
+		\begin{center}
+		\pgfimage[width=0.9\textwidth]{fig/exposicionAuger/timeEvolution_1}<1>
+		\pgfimage[width=0.9\textwidth]{fig/exposicionAuger/timeEvolution_2}<2>
+		\pgfimage[width=0.9\textwidth]{fig/exposicionAuger/timeEvolution_3}<3>
+		\pgfimage[width=0.9\textwidth]{fig/exposicionAuger/fractionEvolution}<4>
+		\end{center}
+	\end{block}
+\end{frame}
+
+
+\begin{frame}{Integraci\'on temporal y en superficie}
+	\begin{block}{Envejecimiento de detector}
+		\begin{center}
+		\pgfimage[width=0.55\textwidth]{fig/exposicionAuger/timedecay_vs_reflect_absorp_2}
+		\end{center}
+	\end{block}
+	\begin{block}{Envejecimiento de detector}<2>
+		\begin{center}
+		\renewcommand{\arraystretch}{1.4}
+		\footnotesize
+		\begin{tabular}{|l|ccc|c|}
+					\hline
+					Período       & tyRef & wAbs & LDT        &    Pérdida de exposición \\
+					\hline
+					$2004 - 2008$ & 0.94  & 100  & $\sim63$ns &    $--$ \\
+					$2009 - 2010$ & 0.94  & 80   & $\sim60$ns &    $-15.2\%$\\
+					$2011 - 2013$ & 0.93  & 100  & $\sim57$ns &    $-17.5\%$\\
+					\hline
+		\end{tabular}
+		\end{center}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Errores sistem\'aticos}
+	\begin{alertblock}{Bines representativos en ES}
+		\begin{center}
+			\pgfimage[width=0.75\textwidth]{fig/exposicionAuger/importantBins_oldWeights}
+		\end{center}
+	\end{alertblock}
+	\begin{block}{Resultado}
+		\begin{center}
+			Se recalculo la exposici\'on sobre los bines que m\'as contribuyen a la exposici\'on.
+		\end{center}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Errores sistem\'aticos}
+	\begin{block}{}
+		\begin{center}
+			\pgfimage[width=0.45\textwidth]{fig/exposicionAuger/nu_xsection_models}\hspace{2mm}
+			\pgfimage[width=0.45\textwidth]{fig/exposicionAuger/tau_E_loss_models}
+		\end{center}
+	\end{block}
+	\begin{exampleblock}{}
+		\begin{center}
+			\begin{tabular}{|l|l|l|}
+			\hline
+			\textbf{Modelo}      & Secci\'on eficaz& P\'erdida de energ\'ia del $\tau$ \\ 
+			\hline
+			Referencia &    Sarkar     & ALLM\\ 
+			%
+			Pesimista &  ASW &     BB\\ 
+			%
+			Optimista &   Armesto Sat. $\lambda=0.4$&  ASW\\
+			\hline 
+			\end{tabular}  
+		\end{center}
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}{Errores sistem\'aticos}
+	\begin{block}{Cambio en las probabilidades}
+		\begin{center}
+			\pgfimage[width=0.75\textwidth]{fig/exposicionAuger/pdfSyst}
+		\end{center}
+	\end{block}
+	\begin{exampleblock}{Resultado}
+		\begin{center}
+			Cambian la probabilidad de emerger y el espectro de energ\'ia.
+		\end{center}
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}{Emisi\'on de radio en lluvias atmosf\'ericas}
+% \framesubtitle{}
+\footnotesize
+	\begin{block}{Part\'icula que se desplaza en l\'inea recta a velocidad constante}
+		\begin{center}
+		\pgfimage[width=0.5\textwidth]{fig/EASRadio/trackSch}
+		\end{center}
+	\end{block}
+	
+	\begin{block}{Aproximaci\'on ZHS}
+		\begin{center}
+		\pgfimage[width=0.5\textwidth]{fig/EASRadio/zhs_pulse}
+		\end{center}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Detector ideal}
+\footnotesize
+		\begin{alertblock}{Caracter\'isticas:}
+		 \centering
+		 \textbf{100$\bm\%$ eficiente en el rango angular $\bm{90^\circ}$ - $\bm{92.5^\circ}$}
+		\end{alertblock}
+
+		\begin{block}{\scriptsize L\'imite diferencial: 90000 antennas - Trigger local 50${\rm \mu Vm}$ - L = 250 ${\rm km}$ - 500${\rm km}$}
+			\begin{center}
+			\pgfimage[width=0.9\textwidth]{fig/resultadosRadio/limits_future_v1_1_2.pdf}
+			\end{center}
+		\end{block}
+\end{frame}

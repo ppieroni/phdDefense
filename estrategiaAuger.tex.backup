@@ -1,0 +1,7 @@
+
+\begin{frame}
+ \frametitle{Estrategia de cada b\'usqueda}
+ \begin{center}
+  \pgfimage[width=\textwidth]{./fig/estrategiaAuger/analysisSchema_0}
+ \end{center}
+\end{frame}

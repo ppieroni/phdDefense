@@ -1,0 +1,9 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {spanish}
+\beamer@sectionintoc {1}{Estrategia}{3}{1}{1}
+\beamer@sectionintoc {2}{Emisi\'on de radio en EAS}{6}{1}{2}
+\beamer@sectionintoc {3}{Modelado Radio}{13}{1}{3}
+\beamer@sectionintoc {4}{Simulaci\'on Radio}{15}{1}{4}
+\beamer@sectionintoc {5}{Caracterizaci\'on}{18}{1}{5}
+\beamer@sectionintoc {6}{C\'alculo de la exposici\'on}{24}{1}{6}
+\beamer@sectionintoc {7}{Resultado final}{35}{1}{7}

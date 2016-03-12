@@ -1,0 +1,132 @@
+\section{Introducci\'on}
+
+\begin{frame}
+ \frametitle{Resumen}
+%  \framesubtitle{}
+ \begin{exampleblock}{
+  \begin{center}
+	\textbf{Medici\'on del flujo de neutrinos c\'osmicos ultra energ\'eticos mediante detectores de superficie}
+  \end{center}
+  }
+  \begin{enumerate}\setlength\itemsep{3mm}
+   \item Introducci\'on
+   \item Detecci\'on de neutrinos ultra energ\'eticos con el observatorio Pierre Auger
+   \item Detecci\'on de neutrinos ultra energ\'eticos con un arreglo de antenas de radio
+  \end{enumerate}
+
+ \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+ \frametitle{?`Por qu\'e astrof\'isica con neutrinos?}
+ \begin{textblock}{15}(0.5,2)
+  \begin{block}{Mensajeros de alta energ\'ia}
+   \begin{itemize}\setlength\itemsep{2mm}
+    \item {\color<2>{OrangeRed}\textbf<2>{Protones}}
+    \item {\color<3>{OrangeRed}\textbf<3>{Fotones}}
+    \item {\color<4->{OrangeRed}\textbf<4->{Neutrinos}}
+   \end{itemize}
+  \end{block}
+ \end{textblock}
+ \begin{textblock}{7.5}(0.5,7.5)
+  \begin{block}{Cualidades deseadas}
+   \begin{itemize}\setlength\itemsep{3mm}
+    \item {\color<2->{Green} Escapan de la zona de aceleraci\'on}
+    \item {\color<3,4->{Green}\color<2>{Red} No se deflectan con campos magn\'eticos.}
+    \item {\color<4->{Green}\color<2,3>{Red} No pierden energ\'ia en el trayecto}
+    \item {\color<2,3>{Green}\color<4->{Red} Es f\'acil detectarlos}
+   \end{itemize}
+  \end{block}
+ \end{textblock}
+ 
+ \begin{textblock}{7}(8.5,7.3)
+   \begin{overprint}
+    \onslide<1>\vspace*{4mm}\centerline{\includegraphics[width=\textwidth]{fig/motivacion/RayosCosm_0}}
+    \onslide<2>\centerline{\includegraphics[height=0.75\textwidth]{fig/motivacion/proton}}
+    \onslide<3>\centerline{\includegraphics[height=0.75\textwidth]{fig/motivacion/photon}}
+    \onslide<4> 
+		\vspace*{1cm}
+		\begin{block}{}
+		\centering 
+		\textbf{El desaf\'io consiste en detectarlos!}
+		\end{block}
+		\vfill
+		\begin{alertblock}{Soluci\'on}<5>
+		\centering 
+		\textbf{Detectores gigantes}
+		\end{alertblock}
+		\vfill
+	\onslide<5>
+		\vspace*{1cm}
+		\begin{block}{}
+		\centering 
+		\textbf{El desaf\'io consiste en detectarlos!}
+		\end{block}
+		\begin{alertblock}{Soluci\'on}
+		\centering 
+		\textbf{Detectores gigantes}
+		\end{alertblock}
+   \end{overprint}
+ \end{textblock}
+\end{frame}
+
+\begin{frame}
+ \frametitle{De donde vienen?}
+ \begin{block}{Producci\'on en las fuentes (AGN o GRB)}
+  \begin{itemize}
+   \item Producci\'on via:
+   \begin{displaymath}
+    \begin{array}{l}
+		p + p \rightarrow \pi`s + X \\
+		p + \gamma \rightarrow \Delta^{+} \rightarrow p +\pi^{0}\,\,{\rm \acute{o}}\,\, n +\pi^{+} \\
+        {\rm otras\,\, resonancias..}
+	\end{array}
+   \end{displaymath}
+  \end{itemize}
+ \end{block}
+ \vfill
+ \begin{center}
+  \pgfimage[width=0.65\textwidth]{fig/motivacion/AGN_GRB_nufluxes}
+ \end{center}
+ \vfill
+\end{frame}
+
+\begin{frame}
+ \frametitle{De donde vienen?}
+ \begin{block}{Cosmog\'enicos o GZK}
+  \begin{itemize}
+   \item Producci\'on via:
+   \begin{displaymath}
+    \begin{array}{l}
+		p + \gamma_{CMB} \rightarrow \Delta^{+} \rightarrow p +\pi^{0}\,\,{\rm \acute{o}}\,\, n +\pi^{+} \\
+        {\rm otras\,\, resonancias..}
+	\end{array}
+   \end{displaymath}
+  \end{itemize}
+ \end{block}
+ \vfill
+ \begin{center}
+  \pgfimage[width=0.65\textwidth]{fig/motivacion/gzk_fluxes}
+ \end{center}
+ \vfill
+\end{frame}
+
+\begin{frame}
+ \frametitle{Resultados experimentales}
+ \begin{block}{Cosmog\'enicos o GZK}
+  \begin{itemize}
+   \item Producci\'on via:
+   \begin{displaymath}
+    \begin{array}{l}
+		p + \gamma_{CMB} \rightarrow \Delta^{+} \rightarrow p +\pi^{0}\,\,{\rm \acute{o}}\,\, n +\pi^{+} \\
+        {\rm otras\,\, resonancias..}
+	\end{array}
+   \end{displaymath}
+  \end{itemize}
+ \end{block}
+ \vfill
+ \begin{center}
+  \pgfimage[width=0.65\textwidth]{fig/motivacion/gzk_fluxes}
+ \end{center}
+ \vfill
+\end{frame}

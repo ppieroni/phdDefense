@@ -1,0 +1,24 @@
+\section[Resultados]{B\'usqueda de candidatos y resultados}
+
+\begin{frame}
+ \frametitle{Estrategia de cada b\'usqueda}
+ \begin{center}
+  \pgfimage[width=0.9\textwidth]{./fig/estrategiaAuger/analysisSchema_5}
+ \end{center}
+\end{frame}
+
+\begin{frame}
+ \frametitle{}
+	\begin{block}{ES}
+		\begin{center}	 
+		\pgfimage[width=0.9\textwidth]{./fig/simulacionAuger/periodosES}
+		\end{center}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Estrategia de cada b\'usqueda}
+ \begin{center}
+  \pgfimage[width=0.9\textwidth]{./fig/estrategiaAuger/analysisSchema_6}
+ \end{center}
+\end{frame}
