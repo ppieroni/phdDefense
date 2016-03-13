@@ -10,8 +10,7 @@
 \begin{frame}{Selecci\'on de eventos de calidad}
 \begin{block}{Eliminaci\'on de:}
  \begin{enumerate}[<alert@+|+->]
-  \item PMT defectuosos
-  \item Eventos debido a relampagos
+  \item PMT defectuosos o con se\~nales espureas
   \item Se\~nales debidas a muones accidentales
   \item Estaciones aisladas espacial o temporalmente
  \end{enumerate}
@@ -19,16 +18,18 @@
 
 \begin{exampleblock}{Ejemplo:}
  \begin{overprint}
- \onslide<1>\centerline{\includegraphics[height=0.35\textwidth]{fig/seleccionAuger/pmt2_border}}
- \onslide<2>\centerline{\includegraphics[height=0.35\textwidth]{fig/seleccionAuger/lighting}}
- \onslide<3>\centerline{\includegraphics[height=0.35\textwidth]{fig/seleccionAuger/badStartTime}}
- \onslide<4>\centerline{\includegraphics[height=0.35\textwidth]{fig/seleccionAuger/geome2}}
+ \onslide<1>\centerline{\includegraphics[width=0.48\textwidth]{fig/seleccionAuger/pmt2_border}\hspace*{2mm}
+ \includegraphics[width=0.48\textwidth]{fig/seleccionAuger/lighting}}
+ \onslide<2>\centerline{\includegraphics[height=0.35\textwidth]{fig/seleccionAuger/badStartTime_2}}
+ \onslide<3>\centerline{\includegraphics[height=0.35\textwidth]{fig/seleccionAuger/geome2}}
  \end{overprint}
 \end{exampleblock}
 \end{frame}
 
 
-\begin{frame}{Selecci\'on de lluvias inclinadas}
+\begin{frame}
+\frametitle<1>{Selecci\'on de lluvias inclinadas: Huella elongada}
+\frametitle<2->{Selecci\'on de lluvias inclinadas: Informaci\'on temporal}
 	\begin{center}
 		\begin{textblock}{6.5}(0.4,3)
 % 			\begin{block}{Variables:}
@@ -76,38 +77,44 @@
 	\end{center}
 \end{frame}
 
-\begin{frame}{Selecci\'on de lluvias j\'ovenes}
+\begin{frame}
+\frametitle<1>{Selecci\'on de lluvias j\'ovenes: Time over Threshold (ToT)}
+\frametitle<2>{Selecci\'on de lluvias j\'ovenes: Area over Prak (AoP)}
+\frametitle<3>{Selecci\'on de lluvias j\'ovenes}
 	\begin{center}\footnotesize
-		\begin{textblock}{7.3}(0.4,2.)
-			\begin{block}{Disparo Time over threshold (ToT)}
-			
-			{\footnotesize 13 bines sobre 0.2 VEM en una ventana de 3$\mu {\rm s}$}\\
-			Ejemplo:
-			\begin{center}
-			\pgfimage[width=0.8\textwidth]{fig/seleccionAuger/traza_tot_m}
-			\end{center}
-			Se\~nales extendidas en el tiempo generan disparos ToT 
+		
+		\begin{textblock}{15}(0.5,2)
+			\begin{alertblock}{}
+				\begin{overprint}
+				\onslide<1>\centerline{\textbf{13 bines temporales sobre umbral.}}
+				\onslide<2->\centerline{\textbf{\'Area de la se\~nal dividido su m\'aximo.}}
+				\end{overprint}
+			\end{alertblock}
+		\end{textblock}
+
+		
+		\begin{textblock}{7.3}(0.4,3.5)
+			\begin{block}{Se\~nal extendida}
+			\centerline{\pgfimage[width=0.8\textwidth]{fig/seleccionAuger/traza_tot_m}}
+			\begin{overprint}
+			 \onslide<1>\centerline{\textbf{Disparo ToT}}
+			 \onslide<2->\centerline{\textbf{AoP grande}}
+			\end{overprint}
 			\end{block}
 		\end{textblock}
 		
-		\begin{textblock}{7.3}(8.3,2.)
-			\begin{block}{Area sobre pico (AoP)}
-			\begin{center}
-			\pgfimage[width=0.81\textwidth]{fig/seleccionAuger/AoP_def}
-			\end{center}
-			Se\~nales angostas generan ${\rm AoP}\sim 1$
+		\begin{textblock}{7.3}(8.3,3.5)
+			\begin{block}{Se\~nal angosta}
+			\centerline{\pgfimage[width=0.8\textwidth]{fig/seleccionAuger/traza_t2_m}}
+			\begin{overprint}
+			 \onslide<1>\centerline{\textbf{Disparo No ToT}}
+			 \onslide<2->\centerline{\textbf{AoP peque\~no}}
+			\end{overprint}
 			\end{block}
 		\end{textblock}
 		
-% 		\begin{textblock}{5.9}(6.4,0.6)
-% 			\begin{block}{Area over peak (AoP)}
-% 				\pgfimage[width=\textwidth]{fig/aopDef2.png}
-% 				
-% 				Narrow signals in time lead to AoP $\sim1$
-% 			\end{block}
-% 		\end{textblock}
 		\begin{textblock}{15}(0.5,10.0)
-			\begin{exampleblock}{}<2>
+			\begin{exampleblock}{}<3>
 				\begin{center}
 					{\scriptsize
 					\renewcommand{\arraystretch}{1.3}
@@ -119,7 +126,7 @@
 						$\geq 60\%$ de las estaciones con  &                                      & del core con ToT trigger  \\
 						ToT trigger \& AoP $>$ 1.4    & Discriminante de Fisher basado             &      \&                      \\
 						\cline{1-1}
-						Data: 1 junio 10 - 20 junio 2013   & on AoP of {\it early} stations  & Discriminante de Fisher basado  \\
+						Data: 1 junio 10 - 20 junio 2013   & en AoP de estaciones tempranas & Discriminante de Fisher basado  \\
 						$\langle {\rm AoP} \rangle> 1.83$  &                                 &  en el AoP de las estaciones \\
 						AoP$_{\rm min}$ $>$ 1.4 if Nst=3   &                                 & tempranas cercanas al core         \\
 						\hline
@@ -133,23 +140,16 @@
 
 \begin{frame}
  \frametitle{Selecci\'on de lluvias j\'ovenes}
- \begin{block}{Discriminante de Fisher}
- \centering
-  \pgfimage[width=0.85\textwidth]{fig/seleccionAuger/ideaFisher}
- \end{block}
-\end{frame}
-
-\begin{frame}
- \frametitle{Selecci\'on de lluvias j\'ovenes}
  \framesubtitle{Ejemplo: AoP promedio (an\'alisis ES)}
 	\begin{center}
 	\pgfimage[width=0.9\textwidth]{fig/seleccionAuger/AoP_new_without_search_0.pdf}<1>
-	\pgfimage[width=0.9\textwidth]{fig/seleccionAuger/estimaBackground.pdf}<2>
-	\pgfimage[width=0.9\textwidth]{fig/seleccionAuger/AoP_new_without_search_1.pdf}<3->
+	\pgfimage[width=0.9\textwidth]{fig/seleccionAuger/AoP_new_without_search_2.pdf}<2>
+	\pgfimage[width=0.9\textwidth]{fig/seleccionAuger/estimaBackground.pdf}<3>
+	\pgfimage[width=0.9\textwidth]{fig/seleccionAuger/AoP_new_without_search_1.pdf}<4->
 	\end{center}
 	
 	\begin{textblock}{4.3}(7.3,8.5)
-		\begin{alertblock}{}<only@3>
+		\begin{alertblock}{}<only@4>
 		\centering
 	         Eficiencia de selecci\'on $\sim 90\%$	
 		\end{alertblock}

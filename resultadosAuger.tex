@@ -69,11 +69,11 @@
 		\end{textblock}
 		
 		\begin{textblock}{5.6}(10,8)
-			\begin{exampleblock}{Remarks}<3->
+			\begin{exampleblock}{Comentarios}<3->
 				\begin{itemize}
-				\item Most stringent upper bound to the flux
-				\item Lower than Waxman-Bachall upper bound
-				\item Best sensitivity where models predict bigger fluxes
+				\item Cota m\'as estricta presentada por Auger
+				\item Inferior a la cota de Waxman-Bachall
+				\item Mayor sensitividad donde se esperan mayores flujos
 				\end{itemize}
 			\end{exampleblock}
 		\end{textblock}
@@ -98,38 +98,35 @@
 		\begin{block}{Rate de eventos esperado}
 			\begin{center}
 				\renewcommand{\arraystretch}{2.0}
-				\begin{tabular}{l c c} 
+				\begin{tabu}{l c c} 
 	\hline
 	Modelo para       &  Número esperado de eventos     & ~Probabilidad de   \\
 	el flujo difuso   &  (1 enero 2004 - 20 junio 2013) & ~observar $0$   \\
 	\hline
-	Cosmogénico - proton, FRII \cite{Kampert_GZK}     &  $\sim$ 4.0  & $\sim 1.8\times 10^{-2}$ \\
-
-	Cosmogénico - proton, SFR \cite{Kampert_GZK}      &  $\sim$ 0.9  & $\sim 0.4$               \\
-
-	Cosmogénico - proton, Fermi-LAT \cite{Ahlers_GZK} &  $\sim$ 3.2  & $\sim 4\times 10^{-2}$   \\
-
-	Cosmogénico - band \cite{Kotera_GZK}              &  $\sim$ 0.5 $-$ 1.4 & $\sim 0.6~-~0.2$ \\
-
-	Cosmogénico - iron, FRII \cite{Kampert_GZK}       &  $\sim$ 0.3  & $\sim 0.7$ \\
-
-	\hline
-
-	Astrofísico $\nu$ (AGN) \cite{Becker_AGN}     &  $\sim$ 7.2  & $\sim 7\times 10^{-4}$ \\
-
-% 	\hline
-% 
-% 	Exótico \cite{Sigl}                               &  $\sim$ 31.5  & $\sim 2\times 10^{-14}$ \\
+	\rowfont{\color{red}}
+% 	\rowcolor[red]{1.0}
+	Cosmogénico - proton, FRII     &  $\sim$ 4.0  & $\sim 1.8\times 10^{-2}$ \\
+	\rowfont{\color{red}}
+	Cosmogénico - proton, Fermi-LAT &  $\sim$ 3.2  & $\sim 4\times 10^{-2}$   \\
+	\rowfont{\color<2->{blue}}
+	Cosmogénico - proton, SFR &  $\sim$ 0.9  & $\sim 0.4$               \\
+	\rowfont{\color<2->{blue}}
+	Cosmogénico - mixto (banda) &  $\sim$ 0.5 $-$ 1.4 & $\sim 0.6~-~0.2$ \\
+	\rowfont{\color<3->{Green}}
+	Cosmogénico - hierro, FRII &  $\sim$ 0.3  & $\sim 0.7$ \\
 
 	\hline
-	\end{tabular}
+	\rowfont{\color{red}}
+	Astrofísico $\nu$ (AGN) &  $\sim$ 7.2  & $\sim 7\times 10^{-4}$ \\
+	\hline
+	\end{tabu}
 			\end{center}
 		\end{block}
 		\begin{alertblock}{}
-			\begin{itemize}
-			 \item Optimistic proton fluxes discarted $>90\%\rm C.L.$ (\textcolor{Red}{Red numbers})
-			 \item Getting close to less optimistic proton fluxes (\textcolor{Blue}{Blue numbers})
-			 \item Still far from iron fluxes
+			\begin{itemize}[<+->]
+			 \item Flujos optimistas de protones rechazados $>90\%\rm C.L.$ (\textcolor{Red}{rojos})
+			 \item Acerc\'andose a flujos de protones menos optimistas y mixtos (\textcolor{Blue}{azules})
+			 \item Todab\'ia lejos de modelos de hierro (\textcolor{Green}{verdes})
 			\end{itemize}
 		\end{alertblock}
 	\end{frame}
@@ -140,6 +137,6 @@
 		\end{center}
 		\begin{block}{}
 		 \centering
-		 \textbf{Desafio para la pr\'oxima generaci\'on de detectores de neutrinos}
+		 \textbf{Desaf\'io para la pr\'oxima generaci\'on de detectores de neutrinos}
 		\end{block}
 	\end{frame}

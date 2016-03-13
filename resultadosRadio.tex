@@ -7,145 +7,154 @@
 			\begin{displaymath}
 			\begin{aligned}
 				{\cal E} (E_\nu) = 2 \pi 
-				\textcolor{Red}{T A}
+				\textcolor<7>{Red}{T A}
+				\textcolor<6->{DodgerBlue}{
 				\int_{0}^{\infty} 
 				\int_{\theta^{cut}}^{\theta^{max}} 
 				\int_{0}^{E_\nu} 
 				\int_{0}^{E_\tau} 
-				\textcolor<2->{Blue}{\epsilon (x_d,\theta,E_{sh})}
-				\textcolor<3->{DarkOrange}{
+				}
+				\textcolor<1->{Green}{P(E_\tau|E_\nu,\theta)}
+				\textcolor<2->{DarkOrange}{
 				\frac{e^{-\frac{l(x_d)}{\lambda(E_\tau)}}}{\lambda(E_\tau)}\frac{dl(x_d)}{dx_d}
 				}
-				\textcolor<4->{DarkViolet}{P(E_{sh}|E_\tau)}\\
-				\textcolor<5->{Green}{P(E_\tau|E_\nu,\theta)}
-				\textcolor<6->{Magenta}{\sin \theta \cos \theta}
-				dE_{sh} dE_\tau  d\theta dx_d
+				\textcolor<3->{DarkViolet}{P(E_{sh}|E_\tau)}\\
+				\textcolor<4->{Blue}{\epsilon (x_d,\theta,E_{sh})}
+				\textcolor<5->{Magenta}{\sin \theta \cos \theta}
+				\textcolor<6->{DodgerBlue}{dE_{sh} dE_\tau  d\theta dx_d}
 			\end{aligned}
 		\end{displaymath}
 			\end{center}
 		\end{block}
 		\begin{exampleblock}{Ingredientes}
 			\begin{itemize}[<+->]
-			 \item \textcolor{Red}{Tiempo de medici\'on y \'area del detector.}
-			 \item \textcolor{Blue}{Eficiencia de detecci\'on.}
+			 \item \textcolor{Green}{Interacci\'on en la tierra.}
 			 \item \textcolor{DarkOrange}{Probabilidad de decaimiento de un $\tau$ a altura ${\rm x_d}$.}
 			 \item \textcolor{DarkViolet}{Probabilidad que un $\tau$ de energ\'ia $E_\tau$ produzca una lluvia de energ\'ia $E_{sh}$.}
-			 \item \textcolor{Green}{Interacci\'on en la tierra.}
+			 \item \textcolor{Blue}{Eficiencia de detecci\'on.}
 			 \item \textcolor{Magenta}{\'Angulo s\'olido.}
+			 \item \textcolor{DodgerBlue}{Espacio de par\'ametros observado.}
+			 \item \textcolor{Red}{Tiempo de medici\'on y \'area del detector.}
 			\end{itemize}
 		\end{exampleblock}
+		\begin{alertblock}{}<8>
+			\centering
+			\textbf{Calculo de eficiencias}
+		\end{alertblock}
 \end{frame}
 
-\begin{frame}{Topograf\'ia del detector}
-\footnotesize
-	\begin{block}{Descripci\'on}
-		\begin{center}
-		\pgfimage[width=0.85\textwidth]{fig/resultadosRadio/topografia}
-		\end{center}
-	\end{block}
-% 	\begin{block}{}
-% 		\begin{center}
-% 		
-% 		\end{center}
-% 	\end{block}
+\begin{frame}{Eficiencias de disparo}
+\scriptsize
+	
+	\begin{exampleblock}{Procedimiento}
+	 \begin{enumerate}[<alert@+|+->]
+	  \item Definir espacio de par\'ametros 
+	  \item Definir topograf\'ia del detector
+	  \item Lanzar cada lluvia 1000 veces sobre la celda primitiva
+	  \item Verificar disparo
+	  \item Curvas de eficiencia
+	 \end{enumerate}
+	\end{exampleblock}
+	\begin{overprint}
+		\onslide<1>\centerline{\pgfimage[width=0.72\textwidth]{fig/caracterizacionRadio/binesRadio_3}}
+		\onslide<2>\centerline{\pgfimage[width=0.72\textwidth]{fig/resultadosRadio/topografia}}
+		\onslide<3>\centerline{\pgfimage[width=0.72\textwidth]{fig/resultadosRadio/17.00_89.90_00.00_00025_01238_750_750_60_hc}}
+		\onslide<4>\centerline{\pgfimage[width=0.72\textwidth]{fig/resultadosRadio/trigger}}
+		\onslide<5>\centerline{\pgfimage[width=0.72\textwidth]{fig/resultadosRadio/eff50.0_5.0_1000.0_1000.0_60.0_1.0_17.75_m2}}
+	\end{overprint}
 \end{frame}
 
-\begin{frame}{C\'alculo de la eficiencia}
-\footnotesize
-	\begin{block}{Se lanz\'o cada lluvia 1000 veces sobre la celda primitiva}
-	\centering
-		\pgfimage[width=0.48\textwidth]{fig/resultadosRadio/17.00_89.90_00.00_00025_01238_1000_1000_90_re}\hspace*{2mm}
-		\pgfimage[width=0.48\textwidth]{fig/resultadosRadio/17.00_89.90_00.00_00025_01238_1500_1500_60_re} \\ \vspace*{2mm}
-		\pgfimage[width=0.48\textwidth]{fig/resultadosRadio/17.00_89.90_00.00_00025_01238_500_4000_90_de}\hspace*{2mm}
-		\pgfimage[width=0.48\textwidth]{fig/resultadosRadio/17.00_89.90_00.00_00025_01238_750_750_60_hc}
-	\end{block}
-% 	\begin{block}{}
-% 		\begin{center}
-% 		
-% 		\end{center}
-% 	\end{block}
-\end{frame}
-
-\begin{frame}{C\'alculo de la eficiencia}
-\footnotesize
-	\begin{block}{Se lanz\'o cada lluvia 1000 veces sobre la celda primitiva}
-	\centering
-		\pgfimage[width=0.85\textwidth]{fig/resultadosRadio/trigger}
-	\end{block}
-% 	\begin{block}{}
-% 		\begin{center}
-% 		
-% 		\end{center}
-% 	\end{block}
-\end{frame}
-
-
-\begin{frame}{C\'alculo de la eficiencia}
-\footnotesize
-	\begin{block}{Curvas de eficiencia}
-	\centering
-		\pgfimage[width=0.85\textwidth]{fig/resultadosRadio/eff50.0_5.0_1000.0_1000.0_60.0_1.0_17.75_m2}
-	\end{block}
-% 	\begin{block}{}
-% 		\begin{center}
-% 		
-% 		\end{center}
-% 	\end{block}
-\end{frame}
 
 \begin{frame}{Eficiencias de identificaci\'on}
 \footnotesize
-	\begin{block}{Eventos DG dejan huellas m\'as anchas que los ES}
+	\begin{overprint}
+	 \onslide<1>
+		\begin{block}{Eventos DG dejan huellas m\'as anchas que los ES}
+		\centering
+		\pgfimage[width=0.85\textwidth]{fig/resultadosRadio/idRadio}
+		\end{block}
+	\onslide<2>
+		\begin{block}{Eventos DG dejan huellas m\'as anchas que los ES}
+		\centering
+		\pgfimage[width=0.85\textwidth]{fig/resultadosRadio/comp_ES_DG/foorPrint_ZWv1.34_ntuples_v1.22_Downgoing_phi_90_18.5_89_90_100_5_E}
+		\end{block}
+		
+	\onslide<3->
+		\begin{block}{Eventos DG dejan huellas m\'as anchas que los ES}
+		\centering
+		\pgfimage[width=0.85\textwidth]{fig/resultadosRadio/showerWidth_Comp_DG_ES_Wt}
+		\end{block}
+	\end{overprint}
+	\begin{alertblock}{}<4>
 	\centering
-		\pgfimage[width=0.48\textwidth]{fig/resultadosRadio/foorPrint_ZWv1.34_ntuples_v1.22_Downgoing_phi_90_18.5_89_90_100_5_E}\hspace*{2mm}
-		\pgfimage[width=0.48\textwidth]{fig/resultadosRadio/foorPrint_Cone_ZWv1.22_ntuples_v1.21_ChTest_phi_90_18_89.5_90_25_1238_E0_u}
-	\end{block}
-	
-	\begin{block}{Pueden ser discriminados}
-	\centering
-		\pgfimage[width=0.48\textwidth]{fig/resultadosRadio/idRadio}\hspace*{2mm}
-		\pgfimage[width=0.48\textwidth]{fig/resultadosRadio/showerWidth_Comp_DG_ES_Wt}
-	\end{block}
-	
-% 	\begin{block}{}
-% 		\begin{center}
-% 		
-% 		\end{center}
-% 	\end{block}
+	\textbf{Se asumi\'o la misma eficiencia que en Auger}
+	\end{alertblock}
 \end{frame}
+
+% \begin{frame}{Eficiencias de identificaci\'on}
+% \footnotesize
+% 	\begin{block}{Eventos DG dejan huellas m\'as anchas que los ES}
+% 	\centering
+% 		\pgfimage[width=0.48\textwidth]{fig/resultadosRadio/foorPrint_ZWv1.34_ntuples_v1.22_Downgoing_phi_90_18.5_89_90_100_5_E}\hspace*{2mm}
+% 		\pgfimage[width=0.48\textwidth]{fig/resultadosRadio/foorPrint_Cone_ZWv1.22_ntuples_v1.21_ChTest_phi_90_18_89.5_90_25_1238_E0_u}
+% 	\end{block}
+% 	
+% 	\begin{block}{Pueden ser discriminados}
+% 	\centering
+% 		\pgfimage[width=0.48\textwidth]{fig/resultadosRadio/idRadio}\hspace*{2mm}
+% 		\pgfimage[width=0.48\textwidth]{fig/resultadosRadio/showerWidth_Comp_DG_ES_Wt}
+% 	\end{block}
+% 	
+% % 	\begin{block}{}
+% % 		\begin{center}
+% % 		
+% % 		\end{center}
+% % 	\end{block}
+% \end{frame}
 
 
 \section[Resultados]{Resultado final}
 
-\begin{frame}{Comparaci\'on con Auger}
-\footnotesize
-	\begin{block}{Cociente de cantidad de eventos esperados como funci\'on del threshold local}
-	\centering
-		\pgfimage[width=0.85\textwidth]{fig/resultadosRadio/CompRadioAuger_1000.0_5.0_1.0_de_modo3}
-	\end{block}
-	
-% 	\begin{block}{}
-% 		\begin{center}
-% 		
-% 		\end{center}
+% \begin{frame}{Desempe\~no respecto de Auger}
+% \footnotesize
+% 	\begin{block}{Cociente de cantidad de eventos esperados como funci\'on del threshold local}
+% 	\centering
+% 		\pgfimage[width=0.85\textwidth]{fig/resultadosRadio/CompRadioAuger_1000.0_5.0_1.0_de_modo3}
 % 	\end{block}
+% % 	\begin{block}{}
+% % 		\begin{center}
+% % 		
+% % 		\end{center}
+% % 	\end{block}
+% \end{frame}
+
+\begin{frame}{Desempe\~no: Radio vs. Auger}
+\footnotesize
+	\begin{alertblock}{Comparaci\'on:}\centering
+	Cantidad de eventos esperados en mediciones equivalentes.
+	\end{alertblock}
+	\begin{block}{Arreglo con bordes densos}<2->
+	\centering
+	\visible<2->{
+		\pgfimage[width=0.85\textwidth]{fig/resultadosRadio/CompRadioAuger_50.0_5.0_1.0_de_modo2}}
+	\end{block}
+
+	\begin{exampleblock}{}<3>
+	\centering
+	\textbf{La exposici\'on aumenta con el \'area}
+	\end{exampleblock}
+	
+	\begin{textblock}{3}(4,6.8)
+	\visible<3>{
+	\centering\scriptsize
+	 \textbf{Par\'ametros:}\\
+	 \pgfimage[width=\textwidth]{fig/resultadosRadio/topografia_de}}
+	\end{textblock}
+
+	
 \end{frame}
 
-\begin{frame}{Comparaci\'on con Auger}
-\footnotesize
-	\begin{block}{Cociente de cantidad de eventos esperados}
-	\centering
-		\pgfimage[width=0.85\textwidth]{fig/resultadosRadio/CompRadioAuger_50.0_5.0_1.0_de_modo2}
-	\end{block}
-	
-% 	\begin{block}{}
-% 		\begin{center}
-% 		
-% 		\end{center}
-% 	\end{block}
-\end{frame}
-
-\begin{frame}{Comparaci\'on con Auger}
+\begin{frame}{Desempe\~no: Radio vs. Auger}
 \footnotesize
 	\begin{block}{Tama\~no dle detector}
 	\centering
@@ -159,7 +168,7 @@
 % 	\end{block}
 \end{frame}
 
-\begin{frame}{Comparaci\'on con Auger}
+\begin{frame}{Desempe\~no: Radio vs. Auger}
 \footnotesize
 	\begin{block}{Tama\~no dle detector}
 	\centering
@@ -210,6 +219,14 @@
 		\end{tabular}
 		\end{center}
 	\end{block}
+	\begin{exampleblock}{}
+% 	\begin{itemize}[<alert@+|+->]
+	\centering
+	 \textbf{Con un arreglo de \cant{250}{km} es posible alcanzar modelos de Fe}
+% 	 \item Mezcla con neutrinos IceCube?
+% 	\end{itemize}
+
+	\end{exampleblock}
 \end{frame}
 
 \begin{frame}{Desempe\~no - L = 500 ${\rm km}$}

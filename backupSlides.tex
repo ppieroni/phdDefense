@@ -13,6 +13,19 @@
 	\end{block}
 \end{frame}
 
+\begin{frame}{Identificaci\'on de neutrinos con el SD de Auger}
+	\begin{alertblock}{}\centering
+	Con el SD es posible distinguir frentes mu\'onicos de frentes electromagn\'eticos.
+% 			With the SD, we can distinguish muonic from electromagnetic shower fronts (using the time structure of the signals in the water Cherenkov stations).
+	\end{alertblock}
+	
+	\begin{block}{Traza Cherenkov medida con una resoluci\'on de 25ns}
+	\centering
+	\pgfimage[width=0.8\textwidth]{fig/detectorAuger/tanque_muon.pdf}
+	\end{block}
+	
+\end{frame}
+
 \begin{frame}
  \frametitle{Divisi\'on de las muestras para DG}
 	\begin{block}{DGL}
@@ -42,6 +55,15 @@
  \begin{center}
   \pgfimage[width=0.9\textwidth]{./fig/estrategiaAuger/analysisSchema_1}
  \end{center}
+\end{frame}
+
+
+\begin{frame}
+ \frametitle{Selecci\'on de lluvias j\'ovenes}
+ \begin{block}{Discriminante de Fisher}
+ \centering
+  \pgfimage[width=0.85\textwidth]{fig/seleccionAuger/ideaFisher}
+ \end{block}
 \end{frame}
 
 \begin{frame}{Eficiencias DG}
@@ -163,6 +185,35 @@
 	\end{block}
 \end{frame}
 
+\begin{frame}{Exposici\'on combinada}
+	\begin{block}{Obtenci\'on de la exposicion total}
+		\begin{center}
+			\begin{displaymath}\renewcommand{\arraystretch}{2}
+			\begin{array}{rcl}
+			N_{esp}& =& N_{esp}^{DGL}+N_{esp}^{DGH}+N_{esp}^{ES} \\ 
+			& = & \int\limits_{E_\nu}\Phi(E_\nu)~({\cal E}^{DGL}+{\cal E}^{DGH}+{\cal E}^{ES})(E_\nu)~dE_\nu\\
+			& \equiv & \int\limits_{E_\nu}\Phi(E_\nu)~{\cal E}(E_\nu)~dE_\nu
+			\end{array}
+			\end{displaymath}
+		\end{center}
+	\end{block}
+	
+	\begin{alertblock}{}
+	\centering
+% 		\begin{center}
+			\begin{displaymath}
+			{\cal E}(E_\nu) = {\cal E}^{DGL}+{\cal E}^{DGH}+{\cal E}^{ES}
+			\end{displaymath}
+% 		\end{center}
+	\end{alertblock}
+	
+	\begin{exampleblock}{}
+		\begin{center}
+			\textbf{La exposici\'on combinada es la suma de las individuales}
+		\end{center}
+	\end{exampleblock}
+\end{frame}
+
 \begin{frame}{Errores sistem\'aticos}
 	\begin{alertblock}{Bines representativos en ES}
 		\begin{center}
@@ -213,6 +264,24 @@
 	\end{exampleblock}
 \end{frame}
 
+
+\begin{frame}{Emisi\'on de radio en lluvias atmosf\'ericas}
+\framesubtitle{Origen}
+\footnotesize
+	
+	\begin{block}{Part\'icula que se desplaza en l\'inea recta a velocidad constante}
+		\begin{center}
+		\pgfimage[width=0.5\textwidth]{fig/EASRadio/trackSch}
+		\end{center}
+	\end{block}
+	
+	\begin{block}{Aproximaci\'on ZHS}
+		\begin{center}
+		\pgfimage[width=0.5\textwidth]{fig/EASRadio/zhs_pulse}
+		\end{center}
+	\end{block}
+\end{frame}
+
 \begin{frame}{Ubicaci\'on del detector}
 \footnotesize
 	\begin{block}{Posibles ubicaciones}
@@ -241,6 +310,22 @@
 	\end{itemize}
 	\end{exampleblock}
 
+\end{frame}
+
+\begin{frame}{C\'alculo de la eficiencia}
+\footnotesize
+	\begin{block}{Se lanz\'o cada lluvia 1000 veces sobre la celda primitiva}
+	\centering
+		\pgfimage[width=0.48\textwidth]{fig/resultadosRadio/17.00_89.90_00.00_00025_01238_1000_1000_90_re}\hspace*{2mm}
+		\pgfimage[width=0.48\textwidth]{fig/resultadosRadio/17.00_89.90_00.00_00025_01238_1500_1500_60_re} \\ \vspace*{2mm}
+		\pgfimage[width=0.48\textwidth]{fig/resultadosRadio/17.00_89.90_00.00_00025_01238_500_4000_90_de}\hspace*{2mm}
+		\pgfimage[width=0.48\textwidth]{fig/resultadosRadio/17.00_89.90_00.00_00025_01238_750_750_60_hc}
+	\end{block}
+% 	\begin{block}{}
+% 		\begin{center}
+% 		
+% 		\end{center}
+% 	\end{block}
 \end{frame}
 
 \begin{frame}{Detector ideal}
