@@ -21,10 +21,10 @@
  \scriptsize
 	\begin{displaymath}
 	 {\cal E}_{DG}(E_\nu)\equiv\iint\limits_{\mathbf{D}~\mathbf{\Omega}}
-	 {\color{Red}
+	 {\color<2->{Red}
 	 P(D|E_{\nu},\Omega)~
 	 }
-	 {\color{Green}
+	 {\color<3>{Green}
 	 \left[~
 	 \iint\limits_{T~A}\epsilon(E_{\nu},\Omega,D,\vec{r},t)~d\vec{r}~dt
 	 \right]
@@ -37,10 +37,10 @@
 %   \footnotesize
 	\begin{displaymath}
 	 {\cal E}_{ES}(E_\nu)\equiv\iiint\limits_{\mathbf{E_\tau}~\mathbf{x_d}~\mathbf{\Omega}}
-	 {\color{Red}
+	 {\color<2->{Red}
 	 P({\rm x_d},E_\tau|E_{\nu},\Omega)~
 	 }
-	 {\color{Green}
+	 {\color<3->{Green}
 	 \left[~
 	 \iint\limits_{T~A}\epsilon(E_\tau,\Omega,{\rm x_d},\vec{r},t)~d\vec{r}~dt
 	 \right]
@@ -51,30 +51,39 @@
  
  \begin{block}{Interpretaci\'on}
 	\begin{itemize}
-	\item {\color{Red} Probabilidad de iniciar una lluvia dado un neutrino incidente.}
-	\item {\color{Green} Cuantas de esas lluvias se esperan haber detectado durante la medici\'on.}
+	\item<2-> {\color{Red} Probabilidad de que un neutrino inicie una lluvia.}
+	\item<3> {\color{Green} Probabilidad de detectar la lluvia, integrada en tiempo y \'area.}
 	\end{itemize}
  \end{block}
 \end{frame}
 % 
-\begin{frame}{C\'alculo de los t\'erminos de probabilidad}
+\begin{frame}{T\'erminos de probabilidad}
 \footnotesize
  \begin{block}{Lluvias DG}
   \centering
-%   \begin{displaymath}
-  $$
-   P(D|E_{\nu},\theta) = \frac{1}{m}~\sigma(E_{\nu})\cos\theta
-   $$
-%   \end{displaymath}
+	\begin{itemize}
+	 \item Probabilidad de que un $\nu_x$ genere una lluvia a una profundidad $D$ en la atm\'osfera:
+			$$
+			P(D|E_{\nu},\theta) = \frac{1}{m}~\sigma(E_{\nu})\cos\theta
+			$$
+	\end{itemize}
  \end{block}
+ 
+ \begin{textblock}{3.}(1.5,9)
+  \scriptsize
+  \begin{alertblock}{$f(E_\tau|E_\nu,\theta)$:}
+  \centering
+	Obtenida mediante Monte Carlo
+  \end{alertblock}
+ \end{textblock}
  
  \begin{block}{Lluvias ES}
   \begin{enumerate}
-   \item Espectro de energ\'ia de los $\tau$ que escapan de la tierra $f(E_\tau|E_\nu,\theta)$ obtenido mediante Monte Carlo.
+   \item Probabilidad de que un $\nu_\tau$ genere un $\tau$:
 	\begin{center}
 		\pgfimage[width=0.45\textwidth]{./fig/exposicionAuger/pdfs_defensa}
 	\end{center}
-   \item Probabilidad de decaimiento del $\tau$ en la atm\'osfera:
+   \item Probabilidad de que el $\tau$ decaiga en en la atm\'osfera y genere una lluvia:
    \begin{displaymath}
     h(x_d,(E_\tau,\theta))=
 		\exp{\left(
@@ -86,25 +95,7 @@
  \end{block}
 \end{frame}
 
-\begin{frame}{Integraci\'on de las eficiencias}
-	\begin{block}{M\'etodo de calculo}
-	\begin{enumerate}[<uncover@+-|alert@+>]
-	 \item Elegir una configuraci\'on representativa cada 3 dias.
-	 \item Lanzar las lluvias sobre tal configuraci\'on y recalcular los criterios de disparo.
-	 
-	 \begin{center}  
-		\visible<2->{\pgfimage[width=0.45\textwidth]{fig/exposicionAuger/aperturaReal}}
-	 \end{center}
-	 \item Calcular la integral como: $\sum_{t_i} {\cal A}_{circ} \times \frac{\#_{sel}}{\#_{sim}} \times \Delta T_i$
-	\end{enumerate}
 
-	\end{block}
-% 	\begin{alertblock}{M\'etodo de calculo}
-% 		\begin{center}
-% 		
-% 		\end{center}
-% 	\end{alertblock}
-\end{frame}
 
 \begin{frame}{Exposici\'on combinada}
 	\begin{alertblock}{}
@@ -127,39 +118,38 @@
 	\end{block}
 	\begin{alertblock}{}
 		\begin{center}
-			\textbf{El canal ES domina a bajas ener\'ias}
+			\textbf{El canal ES domina por debajo de $\mathbf{10^{19}{\rm\ \mathbf{eV}}}$}
 		\end{center}
 	\end{alertblock}
 \end{frame}
 % 
+
 \begin{frame}{Exposici\'on combinada}
-	\begin{block}{Distribuci\'on de la exposici\'on}
+\framesubtitle{Escenario $\Phi\propto E^{-2}$}
+	\begin{exampleblock}{Distribuci\'on de la exposici\'on}
 		\begin{center}
 		\begin{tabular}{|c|c|c|c|c|}
 			\hline
 			\diagbox{Lluvia}{Criterio} & ES & DGH & DGL  & Total\\ \hline
-			ES     &    0.80       &    0.04       &     $<0.001$ & 0.84 \\ \hline
-			DGH    &    0.03       &    0.11       &     $<0.001$ & 0.14 \\ \hline
-			DGL    &    $<0.001$   &    $<0.001$   &     0.02     & 0.02 \\
+			ES     &    \alert<2>{0.80}& \alert<2>{0.04} & $<0.001$ & \alert<1>{0.84} \\ \hline
+			DGH    &    \alert<3>{0.03}       &    \alert<3>{0.11}       &     $<0.001$ & \alert<1>{0.14} \\ \hline
+			DGL    &    $<0.001$   &    $<0.001$   &     0.02     & \alert<1>{0.02} \\
 			\hline
 		\end{tabular}
 		\end{center}
+	\end{exampleblock}
+	
+	\begin{block}{}
+	 \begin{itemize}[<+->]
+	  \item Earth Skimming domina la detecci\'on
+	  \item El criterio de DGH recupera un $4\%$ de exposici\'on a eventos ES
+	  \item El criterio ES recupera un $3\%$ de exposici\'on a eventos DGH
+	 \end{itemize}
 	\end{block}
-	\begin{alertblock}{Matriz de clasificaci\'on}<uncover@2>
-		\begin{center}
-		\begin{tabular}{|c|c|c|c|c|c|}
-			\hline
-			\diagbox{Lluvia}{Criterio} & ES $\wedge$ DGH &  ES    &  DGH   &  DGL      \\ \hline
-			ES                         & 0.90            &  0.86  &  0.48  &  0.00     \\ \hline
-			DGH                        & 0.10            &  0.14  &  0.52  &  0.03     \\ \hline
-			DGL                        & 0.00            &  0.00  &  0.00  &  0.97     \\ \hline\hline
-			Probabilidad               & 0.69            &  0.20  &  0.09  &  0.02     \\
-			\hline
-		\end{tabular}
-		\end{center}
-	\end{alertblock}
+
+	
 \end{frame}
-% 
+
 \begin{frame}{Errores sistem\'aticos}
 	\begin{block}{Errores sistem\'aticos}
 		\begin{center}
@@ -208,9 +198,9 @@
 				\end{tabular}
 		\end{center}
 	\end{block}
-	\begin{exampleblock}{}
-		\begin{center}\footnotesize
-			La combinaci\'on se obtuvo teniendo en cuenta la contribuci\'on relativa de cada canal a la exposici\'on y correlaci\'on total.
-		\end{center}
-	\end{exampleblock}
+% 	\begin{exampleblock}{}
+% 		\begin{center}\footnotesize
+% 			La combinaci\'on se obtuvo teniendo en cuenta la contribuci\'on relativa de cada canal a la exposici\'on y correlaci\'on total.
+% 		\end{center}
+% 	\end{exampleblock}
 \end{frame}

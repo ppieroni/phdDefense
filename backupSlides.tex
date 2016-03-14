@@ -1,7 +1,13 @@
 \section{Backup Slides}
 
-\frame{\sectionpage}
-
+\begin{frame}{}
+ \begin{alertblock}{}
+  \centering
+  \huge{
+  Backup slides
+  }
+ \end{alertblock}
+\end{frame}
 	
 \begin{frame}
 \frametitle{Observatorio Pierre Auger (PAO)}
@@ -12,6 +18,27 @@
 		\end{center}
 	\end{block}
 \end{frame}
+
+	\begin{frame}
+	\frametitle{Lluvia temprana vs. lluvia tard\'ia}
+	\begin{center}
+		\begin{block}{}
+			\begin{center}
+			\pgfimage[width=.65\textwidth]{fig/detectorAuger/Desarrollo_cascada}<1-2>
+			\pgfimage[width=.65\textwidth]{fig/detectorAuger/Desarrollo_cascada_2}<3>
+			\pgfimage[width=.48\textwidth]{fig/detectorAuger/traza_tot_m}<4>\hspace*{0.01mm}
+			\pgfimage[width=.48\textwidth]{fig/detectorAuger/traza_t2_m}<4>
+			\end{center}
+		\end{block}
+		\begin{block}{}<2->
+			\begin{center}
+			\pgfimage[width=.65\textwidth]{fig/detectorAuger/front_delay_tr}<1>
+			\pgfimage[width=.65\textwidth]{fig/detectorAuger/front_delay}<2>
+			\pgfimage[width=.65\textwidth]{fig/detectorAuger/front_delay_2}<3->
+			\end{center}
+		\end{block}
+	\end{center}
+	\end{frame}
 
 \begin{frame}{Identificaci\'on de neutrinos con el SD de Auger}
 	\begin{alertblock}{}\centering
@@ -57,6 +84,24 @@
  \end{center}
 \end{frame}
 
+\begin{frame}{Selecci\'on de eventos de calidad}
+\begin{block}{Eliminaci\'on de:}
+ \begin{enumerate}[<alert@+|+->]
+  \item PMT defectuosos o con se\~nales espureas
+  \item Se\~nales debidas a muones accidentales
+  \item Estaciones aisladas espacial o temporalmente
+ \end{enumerate}
+\end{block}
+
+	\begin{exampleblock}{Ejemplo:}
+	\begin{overprint}
+	\onslide<1>\centerline{\includegraphics[width=0.48\textwidth]{fig/seleccionAuger/pmt2_border}\hspace*{2mm}
+	\includegraphics[width=0.48\textwidth]{fig/seleccionAuger/lighting}}
+	\onslide<2>\centerline{\includegraphics[height=0.35\textwidth]{fig/seleccionAuger/badStartTime_2}}
+	\onslide<3>\centerline{\includegraphics[height=0.35\textwidth]{fig/seleccionAuger/geome2}}
+	\end{overprint}
+	\end{exampleblock}
+\end{frame}
 
 \begin{frame}
  \frametitle{Selecci\'on de lluvias j\'ovenes}
@@ -130,6 +175,21 @@
 		\begin{center}
 		\pgfimage[width=0.45\textwidth]{fig/exposicionAuger/hc_def.pdf}
 		\end{center}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Integraci\'on de las eficiencias}
+	\begin{block}{M\'etodo de calculo}
+	\begin{enumerate}[<uncover@+-|alert@+>]
+	 \item Elegir una configuraci\'on representativa cada 3 dias.
+	 \item Lanzar las lluvias sobre tal configuraci\'on y recalcular los criterios de disparo.
+	 
+	 \begin{center}  
+		\visible<2->{\pgfimage[width=0.45\textwidth]{fig/exposicionAuger/aperturaReal}}
+	 \end{center}
+	 \item Calcular la integral como: $\sum_{t_i} {\cal A}_{circ} \times \frac{\#_{sel}}{\#_{sim}} \times \Delta T_i$
+	\end{enumerate}
+
 	\end{block}
 \end{frame}
 
@@ -214,6 +274,63 @@
 	\end{exampleblock}
 \end{frame}
 
+\begin{frame}{Exposici\'on combinada}
+\framesubtitle{Escenario $\Phi\propto E^{-2}$}
+	\begin{block}{Distribuci\'on de la exposici\'on}
+		\begin{center}
+		\begin{tabular}{|c|c|c|c|c|}
+			\hline
+			\diagbox{Lluvia}{Criterio} & ES & DGH & DGL  & Total\\ \hline
+			ES     &    \alert<2>{0.80}& \alert<2>{0.04} & $<0.001$ & \alert<1>{0.84} \\ \hline
+			DGH    &    \alert<3>{0.03}       &    \alert<3>{0.11}       &     $<0.001$ & \alert<1>{0.14} \\ \hline
+			DGL    &    $<0.001$   &    $<0.001$   &     0.02     & \alert<1>{0.02} \\
+			\hline
+		\end{tabular}
+		\end{center}
+	\end{block}
+	\begin{exampleblock}{Matriz de clasificaci\'on}<uncover@4->
+		\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			\diagbox{Lluvia}{Criterio} & ES $\wedge$ DGH &  ES    &  DGH   &  DGL      \\ \hline
+			ES       & \alert<5>{0.90} &  \alert<6>{0.86}  &  \alert<7>{0.48}  &  \alert<8>{0.00}     \\ \hline
+			DGH      & \alert<5>{0.10} &  \alert<6>{0.14}  &  \alert<7>{0.52}  &  \alert<8>{0.03}     \\ \hline
+			DGL      & \alert<5>{0.00} &  \alert<6>{0.00}  &  \alert<7>{0.00}  &  \alert<8>{0.97}     \\ \hline\hline
+			Probabilidad & \alert<9>{0.69} &  \alert<9>{0.20}  &  \alert<9>{0.09}  &  \alert<9>{0.02}     \\
+			\hline
+		\end{tabular}
+		\end{center}
+	\end{exampleblock}
+\end{frame}
+
+% \begin{frame}{Exposici\'on combinada}
+% 	\begin{block}{Distribuci\'on de la exposici\'on}
+% 		\begin{center}
+% 		\begin{tabular}{|c|c|c|c|c|}
+% 			\hline
+% 			\diagbox{Lluvia}{Criterio} & ES & DGH & DGL  & Total\\ \hline
+% 			ES     &    0.80       &    0.04       &     $<0.001$ & 0.84 \\ \hline
+% 			DGH    &    0.03       &    0.11       &     $<0.001$ & 0.14 \\ \hline
+% 			DGL    &    $<0.001$   &    $<0.001$   &     0.02     & 0.02 \\
+% 			\hline
+% 		\end{tabular}
+% 		\end{center}
+% 	\end{block}
+% 	\begin{alertblock}{Matriz de clasificaci\'on}<uncover@2>
+% 		\begin{center}
+% 		\begin{tabular}{|c|c|c|c|c|c|}
+% 			\hline
+% 			\diagbox{Lluvia}{Criterio} & ES $\wedge$ DGH &  ES    &  DGH   &  DGL      \\ \hline
+% 			ES                         & 0.90            &  0.86  &  0.48  &  0.00     \\ \hline
+% 			DGH                        & 0.10            &  0.14  &  0.52  &  0.03     \\ \hline
+% 			DGL                        & 0.00            &  0.00  &  0.00  &  0.97     \\ \hline\hline
+% 			Probabilidad               & 0.69            &  0.20  &  0.09  &  0.02     \\
+% 			\hline
+% 		\end{tabular}
+% 		\end{center}
+% 	\end{alertblock}
+% \end{frame}
+
 \begin{frame}{Errores sistem\'aticos}
 	\begin{alertblock}{Bines representativos en ES}
 		\begin{center}
@@ -265,6 +382,16 @@
 \end{frame}
 
 
+\begin{frame}{Unblinding DGL}
+	\begin{center}
+	\pgfimage[width=0.75\textwidth]{fig/resultadosAuger/DGL_Unblinding_Thesis}
+	\end{center}
+	\begin{block}{}
+	\centering {\Large \color{red}\bf 0 candidatos}
+	\end{block}
+\end{frame}
+
+
 \begin{frame}{Emisi\'on de radio en lluvias atmosf\'ericas}
 \framesubtitle{Origen}
 \footnotesize
@@ -278,6 +405,40 @@
 	\begin{block}{Aproximaci\'on ZHS}
 		\begin{center}
 		\pgfimage[width=0.5\textwidth]{fig/EASRadio/zhs_pulse}
+		\end{center}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Emisi\'on de radio en lluvias atmosf\'ericas}
+\framesubtitle{Huella y estructura temporal}
+\footnotesize
+	\begin{block}{Cono Cherenkov}
+		\begin{overprint}
+		\onslide<1>\centerline{\pgfimage[width=0.9\textwidth]{fig/EASRadio/cherEmmision}}
+		\onslide<2>\centerline{\pgfimage[width=0.9\textwidth]{fig/EASRadio/cono}}
+		\onslide<3>\centerline{\pgfimage[width=0.9\textwidth]{fig/EASRadio/chConeSch}}
+		\end{overprint}
+	\end{block}
+	\begin{alertblock}{}<3>
+	\centering
+	\alert<3>{\textbf{Anillo Cherenkov}}
+	\end{alertblock}
+\end{frame}
+
+\begin{frame}{Modelo de juguete}
+\footnotesize
+	\begin{exampleblock}{Esquema}
+		\begin{center}
+		\pgfimage[width=0.85\textwidth]{fig/modeloRadio/timeDelaySchema}
+		\end{center}
+	\end{exampleblock}
+	\begin{block}{Resultado}<2>
+		\begin{center}
+		\visible<2>{
+		\pgfimage[height=0.25\textwidth]{fig/modeloRadio/timeDelay_pd} \hspace*{0mm}
+		\pgfimage[height=0.25\textwidth]{fig/modeloRadio/legend.pdf} \hspace*{0mm}
+		\pgfimage[height=0.25\textwidth]{fig/modeloRadio/timeDelay_spa} \hspace*{0mm}
+		}
 		\end{center}
 	\end{block}
 \end{frame}
@@ -312,6 +473,71 @@
 
 \end{frame}
 
+\begin{frame}{Representaci\'on del detector}
+\footnotesize
+	\begin{block}{Esquema del detector}
+		\begin{center}
+		\pgfimage[width=0.85\textwidth]{fig/simulacionRadio/antennaSch.pdf}
+		\end{center}
+	\end{block}
+% 	\begin{alertblock}{Antena sobre el cono Cherenkov}
+% 	\begin{center}
+% 		\pgfimage[width=0.48\textwidth]{fig/simulacionRadio/antennaSignal}\hspace*{2mm}
+% 		\pgfimage[width=0.48\textwidth]{fig/simulacionRadio/antennaFilt}
+% 	\end{center}
+% 	\end{alertblock}
+\end{frame}
+
+\begin{frame}{Disparo local - Fuentes de ruido}
+\footnotesize
+	\begin{exampleblock}{Fuentes}
+	\begin{itemize}
+	 \item Ionosf\'erico
+	 \item Proveniente de la ciudad
+	 \item Gal\'actico
+	 \item Intr\'inseco
+	\end{itemize}
+	\end{exampleblock}
+	\begin{block}{Intensidad}
+		\begin{center}
+		\pgfimage[width=0.5\textwidth]{fig/simulacionRadio/allanNoise.pdf}
+		\end{center}
+	\end{block}
+	\vspace*{-1cm}
+	\visible<2>{
+		\begin{alertblock}{}
+			\begin{center}
+			\textbf{Nivel de disparo local entre \cant{\bm{40}}{\bm{\mu V/m}} y \cant{\bm{250}}{\bm{\mu V/m}}}
+			\end{center}
+		\end{alertblock}
+		}
+\end{frame}
+
+\begin{frame}{Caracterizaci\'on}
+\footnotesize
+	
+	\begin{overprint}
+	 \onslide<1>
+	 \begin{block}{Polarizaci\'on}
+	 \begin{center}
+		\pgfimage[width=0.85\textwidth]{fig/caracterizacionRadio/malField} 
+		\end{center}
+	\end{block}
+	 \onslide<2>
+	 \begin{block}{Polarizaci\'on}
+		\begin{center}
+		\pgfimage[width=0.48\textwidth]{fig/caracterizacionRadio/foorPrint_ZWv1.22_ntuples_v1.21_ChTest_phi_90_18_89.5_90_25_1238_E0x_u} $\ \ $
+		\pgfimage[width=0.48\textwidth]{fig/caracterizacionRadio/foorPrint_ZWv1.22_ntuples_v1.21_ChTest_phi_90_18_89.5_90_25_1238_E0z_u} \\
+		\vspace*{2mm}
+		\pgfimage[width=0.48\textwidth]{fig/caracterizacionRadio/foorPrint_ZWv1.22_ntuples_v1.21_ChTest_phi_90_18_89.5_90_25_1238_E0y_u} $\ \ $
+		\pgfimage[width=0.48\textwidth]{fig/caracterizacionRadio/phiDist_Test_18_89.5_90_25_1238}
+		\end{center}
+	\end{block}
+	\end{overprint}
+
+	
+\end{frame}
+
 \begin{frame}{C\'alculo de la eficiencia}
 \footnotesize
 	\begin{block}{Se lanz\'o cada lluvia 1000 veces sobre la celda primitiva}
@@ -326,6 +552,43 @@
 % 		
 % 		\end{center}
 % 	\end{block}
+\end{frame}
+
+\begin{frame}{Desempe\~no: Radio vs. Auger}
+\footnotesize
+	\begin{block}{Tama\~no dle detector}
+	\centering
+		\pgfimage[width=0.85\textwidth]{fig/resultadosRadio/area/Area_de}
+	\end{block}
+	
+% 	\begin{block}{}
+% 		\begin{center}
+% 		
+% 		\end{center}
+% 	\end{block}
+\end{frame}
+
+\begin{frame}{Desempe\~no - L = 500 ${\rm km}$}
+	\begin{block}{Rate de eventos}
+		\begin{center}
+		\renewcommand{\arraystretch}{1.3}
+		\footnotesize
+		\begin{tabular}{lccc}
+			\hline
+			\multirow{2}{*}{Modelo} & \multicolumn{3}{c}{Topograf\'ia - \cant{L=500}{km}} \\
+			&   Regular &   Panal de abeja &   Bordes densos \\
+			\hline
+			Cosmogénico - proton, FRII &    185.8 &            193   &           191.3 \\
+			Cosmogénico - proton, Fermi-LAT &     140.3 &             146.0 &           144.8 \\
+			Cosmogénico - proton, SFR &     42.1 &             43.8   &            43.4 \\
+			Cosmogénico - H\'ibrido &  23.9 - 61.3 &   24.8 - 63.7 &  24.6 - 63.2 \\
+			Cosmogénico - iron, FRII &     13.0   &        13.4 &            13.3 \\
+			IceCube extrapolado $E^{-2}$ &      53.6 &         55.5   &            55   \\
+			IceCube extrapolado \emph{Best fit} &    52.4 &  53.8  &   53.3 \\
+			\hline
+		\end{tabular}
+		\end{center}
+	\end{block}
 \end{frame}
 
 \begin{frame}{Detector ideal}

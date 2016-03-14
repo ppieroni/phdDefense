@@ -1,43 +1,52 @@
 \section[Exposicion]{C\'alculo de la exposici\'on}
 
-\begin{frame}{C\'alculo de exposici\'on}
+\frame{
+\begin{block}{}
+ \centering
+ \Large{
+ C\'alculo de la exposici\'on}
+\end{block}
+
+}
+
+\begin{frame}{C\'alculo de la exposici\'on}
 \footnotesize
 		\begin{block}{F\'ormula}
 			\begin{center}
 			\begin{displaymath}
 			\begin{aligned}
 				{\cal E} (E_\nu) = 2 \pi 
-				\textcolor<7>{Red}{T A}
-				\textcolor<6->{DodgerBlue}{
+				\textcolor<4>{Red}{T A}
+				\textcolor<4->{DodgerBlue}{
 				\int_{0}^{\infty} 
 				\int_{\theta^{cut}}^{\theta^{max}} 
 				\int_{0}^{E_\nu} 
 				\int_{0}^{E_\tau} 
 				}
-				\textcolor<1->{Green}{P(E_\tau|E_\nu,\theta)}
+				\textcolor<2->{Green}{P(E_\tau|E_\nu,\theta)}
 				\textcolor<2->{DarkOrange}{
 				\frac{e^{-\frac{l(x_d)}{\lambda(E_\tau)}}}{\lambda(E_\tau)}\frac{dl(x_d)}{dx_d}
 				}
-				\textcolor<3->{DarkViolet}{P(E_{sh}|E_\tau)}\\
-				\textcolor<4->{Blue}{\epsilon (x_d,\theta,E_{sh})}
-				\textcolor<5->{Magenta}{\sin \theta \cos \theta}
-				\textcolor<6->{DodgerBlue}{dE_{sh} dE_\tau  d\theta dx_d}
+				\textcolor<2->{DarkViolet}{P(E_{sh}|E_\tau)}\\
+				\textcolor<3->{Blue}{\epsilon (x_d,\theta,E_{sh})}
+				\textcolor<4->{Magenta}{\sin \theta \cos \theta}
+				\textcolor<4->{DodgerBlue}{dE_{sh} dE_\tau  d\theta dx_d}
 			\end{aligned}
 		\end{displaymath}
 			\end{center}
 		\end{block}
 		\begin{exampleblock}{Ingredientes}
-			\begin{itemize}[<+->]
-			 \item \textcolor{Green}{Interacci\'on en la tierra.}
-			 \item \textcolor{DarkOrange}{Probabilidad de decaimiento de un $\tau$ a altura ${\rm x_d}$.}
-			 \item \textcolor{DarkViolet}{Probabilidad que un $\tau$ de energ\'ia $E_\tau$ produzca una lluvia de energ\'ia $E_{sh}$.}
-			 \item \textcolor{Blue}{Eficiencia de detecci\'on.}
-			 \item \textcolor{Magenta}{\'Angulo s\'olido.}
-			 \item \textcolor{DodgerBlue}{Espacio de par\'ametros observado.}
-			 \item \textcolor{Red}{Tiempo de medici\'on y \'area del detector.}
+			\begin{itemize}
+			 \item<2-> \textcolor{Green}{Interacci\'on en la tierra.}
+			 \item<2-> \textcolor{DarkOrange}{Probabilidad de decaimiento de un $\tau$ a altura ${\rm x_d}$.}
+			 \item<2-> \textcolor{DarkViolet}{Probabilidad que un $\tau$ de energ\'ia $E_\tau$ produzca una lluvia de energ\'ia $E_{sh}$.}
+			 \item<3-> \textcolor{Blue}{Eficiencia de detecci\'on.}
+			 \item<4-> \textcolor{Magenta}{\'Angulo s\'olido.}
+			 \item<4-> \textcolor{DodgerBlue}{Espacio de par\'ametros observado.}
+			 \item<4-> \textcolor{Red}{Tiempo de medici\'on y \'area del detector.}
 			\end{itemize}
 		\end{exampleblock}
-		\begin{alertblock}{}<8>
+		\begin{alertblock}{}<5>
 			\centering
 			\textbf{Calculo de eficiencias}
 		\end{alertblock}
@@ -51,7 +60,7 @@
 	  \item Definir espacio de par\'ametros 
 	  \item Definir topograf\'ia del detector
 	  \item Lanzar cada lluvia 1000 veces sobre la celda primitiva
-	  \item Verificar disparo
+	  \item Verificar disparo (5 antenas sobre el threshold)
 	  \item Curvas de eficiencia
 	 \end{enumerate}
 	\end{exampleblock}
@@ -69,7 +78,7 @@
 \footnotesize
 	\begin{overprint}
 	 \onslide<1>
-		\begin{block}{Eventos DG dejan huellas m\'as anchas que los ES}
+		\begin{block}{Eventos hadronicos inclinados dejan huellas m\'as anchas que los ES}
 		\centering
 		\pgfimage[width=0.85\textwidth]{fig/resultadosRadio/idRadio}
 		\end{block}
@@ -80,14 +89,14 @@
 		\end{block}
 		
 	\onslide<3->
-		\begin{block}{Eventos DG dejan huellas m\'as anchas que los ES}
+		\begin{block}{Eventos hadronicos inclinados dejan huellas m\'as anchas que los ES}
 		\centering
 		\pgfimage[width=0.85\textwidth]{fig/resultadosRadio/showerWidth_Comp_DG_ES_Wt}
 		\end{block}
 	\end{overprint}
 	\begin{alertblock}{}<4>
 	\centering
-	\textbf{Se asumi\'o la misma eficiencia que en Auger}
+	\textbf{Se asumi\'o la misma eficiencia que en Auger ($\sim 90\%$)}
 	\end{alertblock}
 \end{frame}
 
@@ -131,12 +140,15 @@
 \begin{frame}{Desempe\~no: Radio vs. Auger}
 \footnotesize
 	\begin{alertblock}{Comparaci\'on:}\centering
-	Cantidad de eventos esperados en mediciones equivalentes.
+	Cantidad de eventos esperados en el mismo tiempo de medici\'on (3 a\~nos).
 	\end{alertblock}
 	\begin{block}{Arreglo con bordes densos}<2->
-	\centering
-	\visible<2->{
-		\pgfimage[width=0.85\textwidth]{fig/resultadosRadio/CompRadioAuger_50.0_5.0_1.0_de_modo2}}
+		\begin{overprint}
+		\onslide<2-4>
+			\centerline{\pgfimage[width=0.85\textwidth]{fig/resultadosRadio/CompRadioAuger_50.0_5.0_1.0_de_modo2_mod}}
+		\onslide<5>
+			\centerline{\pgfimage[width=0.85\textwidth]{fig/resultadosRadio/CompRadioAuger_50.0_5.0_1.0_de_modo2_mod2}}
+		\end{overprint}
 	\end{block}
 
 	\begin{exampleblock}{}<3>
@@ -150,37 +162,15 @@
 	 \textbf{Par\'ametros:}\\
 	 \pgfimage[width=\textwidth]{fig/resultadosRadio/topografia_de}}
 	\end{textblock}
-
+	\begin{textblock}{3}(4,6.8)
+	\visible<4>{
+	\centering\scriptsize
+	 \textbf{Area total:}\\
+	 \pgfimage[width=\textwidth]{fig/resultadosRadio/topografia_de_area}}
+	\end{textblock}
 	
 \end{frame}
 
-\begin{frame}{Desempe\~no: Radio vs. Auger}
-\footnotesize
-	\begin{block}{Tama\~no dle detector}
-	\centering
-		\pgfimage[width=0.85\textwidth]{fig/resultadosRadio/area/Area_de}
-	\end{block}
-	
-% 	\begin{block}{}
-% 		\begin{center}
-% 		
-% 		\end{center}
-% 	\end{block}
-\end{frame}
-
-\begin{frame}{Desempe\~no: Radio vs. Auger}
-\footnotesize
-	\begin{block}{Tama\~no dle detector}
-	\centering
-		\pgfimage[width=0.85\textwidth]{fig/resultadosRadio/area/CompRadioAuger_50.0_5.0_1.0_de_modo2}
-	\end{block}
-	
-% 	\begin{block}{}
-% 		\begin{center}
-% 		
-% 		\end{center}
-% 	\end{block}
-\end{frame}
 
 \begin{frame}{L\'imite diferencial en 3 a\~nos de exposici\'on}
 
@@ -198,7 +188,7 @@
 		\end{block}
 \end{frame}
 
-\begin{frame}{Desempe\~no - L = 250 ${\rm km}$}
+\begin{frame}{Desempe\~no - L = 250 ${\rm km}$ (GRAND)} 
 	\begin{block}{Rate de eventos}
 		\begin{center}
 		\renewcommand{\arraystretch}{1.3}
@@ -212,7 +202,7 @@
 			Cosmogénico - proton, Fermi-LAT &     34.1 &             39.4 &            39.5 \\
 			Cosmogénico - proton, SFR &     10.3 &             11.8 &            11.9 \\
 			Cosmogénico - H\'ibrido &      5.8 - 14.9 &      6.7 - 17.2 &       6.7 - 17.3 \\
-			Cosmogénico - iron, FRII &     3.2 &              3.6 &             3.7 \\
+			\alert{Cosmogénico - iron, FRII} &     \alert{3.2} &              \alert{3.6} &             \alert{3.7} \\
 			IceCube extrapolado $E^{-2}$ &      13.1 &             15.1 &            15.2 \\
 			IceCube extrapolado \emph{Best fit}  &      12.9 &             14.9 &            15   \\
 			\hline
@@ -222,33 +212,11 @@
 	\begin{exampleblock}{}
 % 	\begin{itemize}[<alert@+|+->]
 	\centering
-	 \textbf{Con un arreglo de \cant{250}{km} es posible alcanzar modelos de Fe}
+	 \textbf{Con un arreglo de \cant{\bm{250}}{\bm{km}} es posible estudiar incluso modelos de Fe}
 % 	 \item Mezcla con neutrinos IceCube?
 % 	\end{itemize}
-
 	\end{exampleblock}
 \end{frame}
 
-\begin{frame}{Desempe\~no - L = 500 ${\rm km}$}
-	\begin{block}{Rate de eventos}
-		\begin{center}
-		\renewcommand{\arraystretch}{1.3}
-		\footnotesize
-		\begin{tabular}{lccc}
-			\hline
-			\multirow{2}{*}{Modelo} & \multicolumn{3}{c}{Topograf\'ia - \cant{L=500}{km}} \\
-			&   Regular &   Panal de abeja &   Bordes densos \\
-			\hline
-			Cosmogénico - proton, FRII &    185.8 &            193   &           191.3 \\
-			Cosmogénico - proton, Fermi-LAT &     140.3 &             146.0 &           144.8 \\
-			Cosmogénico - proton, SFR &     42.1 &             43.8   &            43.4 \\
-			Cosmogénico - H\'ibrido &  23.9 - 61.3 &   24.8 - 63.7 &  24.6 - 63.2 \\
-			Cosmogénico - iron, FRII &     13.0   &        13.4 &            13.3 \\
-			IceCube extrapolado $E^{-2}$ &      53.6 &         55.5   &            55   \\
-			IceCube extrapolado \emph{Best fit} &    52.4 &  53.8  &   53.3 \\
-			\hline
-		\end{tabular}
-		\end{center}
-	\end{block}
-\end{frame}
+
 

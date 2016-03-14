@@ -1,6 +1,14 @@
 \section[Simulaci\'on]{Simulaci\'on Radio}
 
 
+\frame{
+\begin{block}{}
+ \centering
+ \Large{
+ Simulaci\'on}
+\end{block}
+
+}
 
 \begin{frame}{Cadena de simulaci\'on}
 \footnotesize
@@ -14,43 +22,50 @@
 \end{frame}
 
 
+% 
+% \begin{frame}{Representaci\'on del detector}
+% \footnotesize
+% 	\begin{block}{Esquema del detector}
+% 		\begin{center}
+% 		\pgfimage[width=0.6\textwidth]{fig/simulacionRadio/antennaSch.pdf}
+% 		\end{center}
+% 	\end{block}
+% 	\begin{alertblock}{Antena sobre el cono Cherenkov}
+% 	\begin{center}
+% 		\pgfimage[width=0.48\textwidth]{fig/simulacionRadio/antennaSignal}\hspace*{2mm}
+% 		\pgfimage[width=0.48\textwidth]{fig/simulacionRadio/antennaFilt}
+% 	\end{center}
+% 	\end{alertblock}
+% \end{frame}
 
-\begin{frame}{Representaci\'on del detector}
-\footnotesize
-	\begin{block}{Esquema del detector}
-		\begin{center}
-		\pgfimage[width=0.6\textwidth]{fig/simulacionRadio/antennaSch.pdf}
-		\end{center}
-	\end{block}
-	\begin{alertblock}{Antena sobre el cono Cherenkov}
-	\begin{center}
-		\pgfimage[width=0.48\textwidth]{fig/simulacionRadio/antennaSignal}\hspace*{2mm}
-		\pgfimage[width=0.48\textwidth]{fig/simulacionRadio/antennaFilt}
-	\end{center}
-	\end{alertblock}
+
+\begin{frame}
+ \frametitle{Tratamiento de la se\~nal}
+ \footnotesize
+ \begin{textblock}{8}(0.5,2.5)
+  \pgfimage[width=\textwidth]{fig/simulacionRadio/antennaSignal}
+ \end{textblock}
+ \begin{textblock}{6}(9.3,3.5)
+  \begin{exampleblock}{Se\~nal cruda}
+   \begin{itemize}
+    \item Antena sobre el cono Cherenkov
+    \item Lluvia de \cant{E=10^{18}}{eV}
+   \end{itemize}
+  \end{exampleblock}
+ \end{textblock}
+
+ \begin{textblock}{8}(7.5,8.7)
+ \visible<2>{
+  \pgfimage[width=\textwidth]{fig/simulacionRadio/antennaFilt}}
+ \end{textblock}
+ 
+ \begin{textblock}{6}(0.5,10.4)
+  \begin{alertblock}{Procesado}<2>
+   \begin{itemize}
+    \item Filtrado en la banda \cant{30\text{-}80}{MHz}/\cant{120\text{-}900}{MHz}
+    \item Valores de disparo local: \cant{40}{\mu V/m} y \cant{250}{\mu V/m}
+   \end{itemize}
+  \end{alertblock}
+ \end{textblock}
 \end{frame}
 
-\begin{frame}{Disparo local - Fuentes de ruido}
-\footnotesize
-	\begin{exampleblock}{Fuentes}
-	\begin{itemize}
-	 \item Ionosf\'erico
-	 \item Proveniente de la ciudad
-	 \item Gal\'actico
-	 \item Intr\'inseco
-	\end{itemize}
-	\end{exampleblock}
-	\begin{block}{Intensidad}
-		\begin{center}
-		\pgfimage[width=0.5\textwidth]{fig/simulacionRadio/allanNoise.pdf}
-		\end{center}
-	\end{block}
-	\vspace*{-1cm}
-	\visible<2>{
-		\begin{alertblock}{}
-			\begin{center}
-			\textbf{Nivel de disparo local entre \cant{\bm{40}}{\bm{\mu V/m}} y \cant{\bm{250}}{\bm{\mu V/m}}}
-			\end{center}
-		\end{alertblock}
-		}
-\end{frame}

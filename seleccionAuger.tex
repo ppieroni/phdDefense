@@ -9,21 +9,13 @@
 
 \begin{frame}{Selecci\'on de eventos de calidad}
 \begin{block}{Eliminaci\'on de:}
- \begin{enumerate}[<alert@+|+->]
-  \item PMT defectuosos o con se\~nales espureas
+ \begin{enumerate}\setlength\itemsep{3mm}
+  \item PMT defectuosos
+  \item Estaciones con se\~nales espureas (ej: relampagos)
   \item Se\~nales debidas a muones accidentales
   \item Estaciones aisladas espacial o temporalmente
  \end{enumerate}
 \end{block}
-
-\begin{exampleblock}{Ejemplo:}
- \begin{overprint}
- \onslide<1>\centerline{\includegraphics[width=0.48\textwidth]{fig/seleccionAuger/pmt2_border}\hspace*{2mm}
- \includegraphics[width=0.48\textwidth]{fig/seleccionAuger/lighting}}
- \onslide<2>\centerline{\includegraphics[height=0.35\textwidth]{fig/seleccionAuger/badStartTime_2}}
- \onslide<3>\centerline{\includegraphics[height=0.35\textwidth]{fig/seleccionAuger/geome2}}
- \end{overprint}
-\end{exampleblock}
 \end{frame}
 
 
@@ -31,7 +23,7 @@
 \frametitle<1>{Selecci\'on de lluvias inclinadas: Huella elongada}
 \frametitle<2->{Selecci\'on de lluvias inclinadas: Informaci\'on temporal}
 	\begin{center}
-		\begin{textblock}{6.5}(0.4,3)
+		\begin{textblock}{6.5}(9,2.95)
 % 			\begin{block}{Variables:}
 			\begin{overprint}
 			\onslide<1>\centerline{\pgfimage[width=1.0\textwidth]{fig/seleccionAuger/L_W_0.pdf}}
@@ -40,7 +32,7 @@
 % 			\end{block}
 		\end{textblock}
 		
-		\begin{textblock}{8.1}(7.4,2.5)
+		\begin{textblock}{8.1}(0.4,2.5)
 % 			\begin{alertblock}{}
 			\begin{overprint}
 			\onslide<1>\centerline{\pgfimage[height=0.65\textwidth]{fig/seleccionAuger/huellas}}
@@ -79,22 +71,22 @@
 
 \begin{frame}
 \frametitle<1>{Selecci\'on de lluvias j\'ovenes: Time over Threshold (ToT)}
-\frametitle<2>{Selecci\'on de lluvias j\'ovenes: Area over Prak (AoP)}
+\frametitle<2>{Selecci\'on de lluvias j\'ovenes: Area over Peak (AoP)}
 \frametitle<3>{Selecci\'on de lluvias j\'ovenes}
 	\begin{center}\footnotesize
 		
 		\begin{textblock}{15}(0.5,2)
 			\begin{alertblock}{}
 				\begin{overprint}
-				\onslide<1>\centerline{\textbf{13 bines temporales sobre umbral.}}
-				\onslide<2->\centerline{\textbf{\'Area de la se\~nal dividido su m\'aximo.}}
+				\onslide<1>\centerline{\textbf{13 bines temporales por sobre un nivel de se\~nal.}}
+				\onslide<2->\centerline{\textbf{\'Area de la se\~nal dividida por su m\'aximo.}}
 				\end{overprint}
 			\end{alertblock}
 		\end{textblock}
 
 		
 		\begin{textblock}{7.3}(0.4,3.5)
-			\begin{block}{Se\~nal extendida}
+			\begin{block}{Se\~nal extendida (lluvia joven)}
 			\centerline{\pgfimage[width=0.8\textwidth]{fig/seleccionAuger/traza_tot_m}}
 			\begin{overprint}
 			 \onslide<1>\centerline{\textbf{Disparo ToT}}
@@ -104,7 +96,7 @@
 		\end{textblock}
 		
 		\begin{textblock}{7.3}(8.3,3.5)
-			\begin{block}{Se\~nal angosta}
+			\begin{block}{Se\~nal angosta (lluvia vieja)}
 			\centerline{\pgfimage[width=0.8\textwidth]{fig/seleccionAuger/traza_t2_m}}
 			\begin{overprint}
 			 \onslide<1>\centerline{\textbf{Disparo No ToT}}
@@ -142,14 +134,14 @@
  \frametitle{Selecci\'on de lluvias j\'ovenes}
  \framesubtitle{Ejemplo: AoP promedio (an\'alisis ES)}
 	\begin{center}
-	\pgfimage[width=0.9\textwidth]{fig/seleccionAuger/AoP_new_without_search_0.pdf}<1>
-	\pgfimage[width=0.9\textwidth]{fig/seleccionAuger/AoP_new_without_search_2.pdf}<2>
-	\pgfimage[width=0.9\textwidth]{fig/seleccionAuger/estimaBackground.pdf}<3>
-	\pgfimage[width=0.9\textwidth]{fig/seleccionAuger/AoP_new_without_search_1.pdf}<4->
+% 	\pgfimage[width=0.9\textwidth]{fig/seleccionAuger/AoP_new_without_search_0.pdf}<1>
+	\pgfimage[width=0.9\textwidth]{fig/seleccionAuger/AoP_new_without_search_2.pdf}<1>
+	\pgfimage[width=0.9\textwidth]{fig/seleccionAuger/estimaBackground.pdf}<2>
+	\pgfimage[width=0.9\textwidth]{fig/seleccionAuger/AoP_new_without_search_1.pdf}<3->
 	\end{center}
 	
 	\begin{textblock}{4.3}(7.3,8.5)
-		\begin{alertblock}{}<only@4>
+		\begin{alertblock}{}<only@3>
 		\centering
 	         Eficiencia de selecci\'on $\sim 90\%$	
 		\end{alertblock}
